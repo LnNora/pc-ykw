@@ -30,8 +30,7 @@
 		$(document).ready(function() {
 
 			$.fn.fullpage({
-
-				slidesColor: ['#fff', '#fff', '#fff', '#f90', '#ef820'],
+				scrollingSpeed:500,
 
 				anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
 
@@ -46,25 +45,7 @@
 
 					}
 
-					if(index == 2){
-						$(".section2 .sec_01").fadeIn(500);
-					}
 
-					if(index == 3){
-
-						$(".section3 .sec_01").fadeIn(500);
-						$('.section3 .sec_02 li').delay(100).animate({
-						left: '0',
-						opacity:'1'
-						}, 1500, 'easeOutExpo');
-
-					}
-
-					if(index == 4){
-						$(".section4 .sec_01").fadeIn(500);
-						$('.section4').find('p').fadeIn(2000);
-
-					}
 
 				},
 
@@ -79,32 +60,6 @@
 
 					}
 
-
-					if(index == '2'){
-
-						$(".section2 .sec_01").fadeOut(500);
-
-					}
-
-					if(index == '3'){
-
-						$(".section3 .sec_01").fadeOut(500);
-						$('.section3 .sec_02').find('.left').animate({
-						left: '-800px',
-						opacity:'0'
-						}, 1500, 'easeOutExpo');
-						$('.section3 .sec_02').find('.right').animate({
-						left: '800px',
-						opacity:'0'
-						}, 1500, 'easeOutExpo');
-
-					}
-
-					if(index == '4'){
-						$(".section4 .sec_01").fadeOut(500);
-						$('.section4').find('p').fadeOut(2000);
-
-					}
 
 				}
 
@@ -123,10 +78,10 @@
 			el: '.swiper-pagination',
 			clickable: true,
 		},
-		navigation: {
+		/*navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
-		},
+		},*/
 	});
 	
 
@@ -148,17 +103,17 @@
 		<!--header Begin-->
 		<header class="header in_header cf">
 			<div class="wrap cf">
-				<div class="logo"><a href="javascript:void(0);" title=""><img src="assets/images/logo.png" onerror="lods(this)" /></a></div> 
-				<nav class="menu f-18">
-					<ul>
+				<div class="logo"><a href="javascript:void(0);" title=""><img src="assets/images/logo.png" onerror="lods(this)" /><span>逸康医学云影像</span></a></div> 
+				<nav class="menu">
+					<ul class="parent">
 						<li class="on"><a href="/index.html">首页</a></li>
-						<li><a href="/about/index.html">健康管理服务</a>
+						<li><a href="/about/index.html">产品服务</a>
 							<ul>
-								<li><a href="/about/index.html">健康管理服务</a></li>
+								<li><a href="/about/index.html">健康服务</a></li>
 
 							</ul>
 						</li>
-						<li><a href="/sics/index.html">影像管理平台</a>
+						<li><a href="/sics/index.html">云影像解决方案</a>
 							<ul>
 								<li><a href="/sics/index.html">云胶片</a></li>
 								<li><a href="/sics/edu.html">云教育</a></li>
@@ -166,7 +121,7 @@
 								<li><a href="/sics/diagnosis.html">云诊断</a></li>
 							</ul>
 						</li>
-						<li><a href="/case/index.html">解决方案</a>
+						<li><a href="/case/index.html">产品演示</a>
 							<ul>
 								<li><a href="/case/index.html">单体医院</a></li>
 								<li><a href="/case/twins.html">医联体</a></li>
@@ -192,29 +147,28 @@
 		<!-- Swiper -->
 		<div class="swiper-container swiper-container1">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image: url('assets/images/section1_swiper1_img1.jpg');"></div>
-				<div class="swiper-slide" style="background-image: url('assets/images/section1_swiper1_img2.jpg');"></div>
-				<div class="swiper-slide" style="background-image:url('assets/images/section1_swiper1_img3.jpg');"></div>
+				<div class="swiper-slide" style="background-image: url('assets/images/sec1_swiper1.png');"></div>
+				<div class="swiper-slide" style="background-image: url('assets/images/sec1_swiper2.png');"></div>
 			</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
-			<!-- Add Arrows -->
+			<!-- Add Arrows 
 			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-prev"></div>-->
 		</div>
 		<!--swiper end-->
-		<!--section footer-->
+		<!--section footer
 		<div class="footer">
 			<ul class="animated flipInX">
 				<li><a href="#page2"><img src="assets/images/sec01_icon01.png"></a></li>
 				<li><a href="#page3"><img src="assets/images/sec01_icon02.png"></a></li>
 				<li><a href="#page4"><img src="assets/images/sec01_icon03.png"></a></li>
 			</ul>
-		</div>
+		</div>-->
 
 	</div>
 	<!--section end-->
-	<!--第二屏开始-->
+	<!--第二屏开始
 	<div class="section section2">
 		<div class="sec_01">
 			<h1>我是远程影像服务提供方</h1>
@@ -222,10 +176,48 @@
 		</div>
 
 	</div>
-	<!--第二屏结束-->
+	第二屏结束-->
 	<!--section start-->
 	<div class="section section3 rep">
-		<!--<h3>第三屏</h3><p>滚动到第三屏后的回调函数执行的效果</p>-->
+		<!--header Begin-->
+		<header class="header in_header cf">
+			<div class="wrap cf">
+				<div class="logo"><a href="javascript:void(0);" title=""><img src="assets/images/logo.png" onerror="lods(this)" /><span>逸康医学云影像</span></a></div> 
+				<nav class="menu">
+					<ul class="parent">
+						<li class="on"><a href="/index.html">首页</a></li>
+						<li><a href="/about/index.html">产品服务</a>
+							<ul>
+								<li><a href="/about/index.html">健康服务</a></li>
+
+							</ul>
+						</li>
+						<li><a href="/sics/index.html">云影像解决方案</a>
+							<ul>
+								<li><a href="/sics/index.html">云胶片</a></li>
+								<li><a href="/sics/edu.html">云教育</a></li>
+								<li><a href="/sics/brand.html">云品牌</a></li>
+								<li><a href="/sics/diagnosis.html">云诊断</a></li>
+							</ul>
+						</li>
+						<li><a href="/case/index.html">产品演示</a>
+							<ul>
+								<li><a href="/case/index.html">单体医院</a></li>
+								<li><a href="/case/twins.html">医联体</a></li>
+								<li><a href="/case/area.html">区域平台</a></li>
+								<li><a href="/case/image.html">影像中心</a></li>
+								<li><a href="/case/mobile.html">移动体检</a></li>
+								<li><a href="/case/case.html">经典案例</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html" target="_self">关于我们</a></li>  
+					</ul>
+				</nav>
+
+			</div>
+
+		</header>
+		<!--header End-->
 		<div class="sec_01">
 			<h1>我是远程影像服务提供方</h1>
 			<p>随着医学影像的发展，国内医学影像行业的变革日益提上日程，构建医学影像传输、指导、输出的互联网平台，更好地服务有影像诊断需求的医疗机构及患者。</p>
@@ -233,49 +225,68 @@
 		</div>
 		<div class="sec_02">
 			<ul>
-				<li class="li_01 left"><img src="assets/images/sec3_icon01.png"><div><h2>资源共享</h2><p>基于远程医学影像平台，
+				<li class="li_01 left"><div class="img-inner" style="background-image: url('assets/images/sec3_icon01.png');"></div><div class="text-inner"><h2>资源共享</h2><p>基于远程医学影像平台，
 					实现区域内专家资源共享，
 				树立行业新秩序</p></div></li>
-				<li class="li_02 left"><img src="assets/images/sec3_icon02.png"><div><h2>零成本投入</h2><p>逸康云提供专业平台
+				<li class="li_02 left"><div class="img-inner" style="background-image: url('assets/images/sec3_icon02.png');"></div><div class="text-inner"><h2>零成本投入</h2><p>逸康云提供专业平台
 					运营支撑，实时阅片，
 				无基建投入</p></div></li>
-				<li class="li_03 right"><img src="assets/images/sec3_icon03.png"><div><h2>业务协同</h2><p>随时随地为更多医院及患者
+				<li class="li_03 right"><div class="img-inner" style="background-image: url('assets/images/sec3_icon03.png');"></div><div class="text-inner"><h2>业务协同</h2><p>随时随地为更多医院及患者
 					服务，有效利用医生碎片化
 				时间，提升医疗资源利用率</p></div></li>
-				<li class="li_04 right"><img src="assets/images/sec3_icon04.png"><div><h2>资源共享</h2><p>基于上下级医院远程影像，
+				<li class="li_04 right"><div class="img-inner" style="background-image: url('assets/images/sec3_icon04.png');"></div><div class="text-inner"><h2>资源共享</h2><p>基于上下级医院远程影像，
 					实现区域内业务协同，
 				建立双向转诊绿色通道</p></div></li>
 			</ul>
+		</div>
+		<div class="bg">
 		</div>
 	</div>
 	<!--section end-->
 	<!--第四屏开始-->
 	<div class="section section4 rep">
-
 		<div class="sec_01">
-			<h1>我是远程影像服务提供方</h1>
-			<p>随着医学影像的发展，国内医学影像行业的变革日益提上日程，构建医学影像传输、指导、输出的互联网平台，更好地服务有影像诊断需求的医疗机构及患者。</p>
+			<h1>我是医疗机构</h1>
+			<h2>（远程影像服务需求方）</h2>
+			<p>基层医疗机构影像诊断能力相对薄弱，疑难病症无法处理，无法留住病患，远程影像诊断需求迫切。</p>
 			<button>申请加入</button>
 		</div>
 		<div class="sec_02">
 			<ul>
-				<li class="li_01 left"><img src="assets/images/sec3_icon01.png"><div><h2>资源共享</h2><p>基于远程医学影像平台，
-					实现区域内专家资源共享，
-				树立行业新秩序</p></div></li>
-				<li class="li_02 left"><img src="assets/images/sec3_icon02.png"><div><h2>零成本投入</h2><p>逸康云提供专业平台
-					运营支撑，实时阅片，
-				无基建投入</p></div></li>
-				<li class="li_03 right"><img src="assets/images/sec3_icon03.png"><div><h2>业务协同</h2><p>随时随地为更多医院及患者
-					服务，有效利用医生碎片化
-				时间，提升医疗资源利用率</p></div></li>
-				<li class="li_04 right"><img src="assets/images/sec3_icon04.png"><div><h2>资源共享</h2><p>基于上下级医院远程影像，
-					实现区域内业务协同，
-				建立双向转诊绿色通道</p></div></li>
+				<li class="li_01 left"><div class="img-inner" style="background-image: url('assets/images/sec4_icon1.png');"></div><div class="text-inner"><h2>远程会诊</h2><p>基层医疗机构自主选择
+医院上传影像，解决医院
+影像医生资源缺乏的困局</p></div></li>
+				<li class="li_02 left"><div class="img-inner" style="background-image: url('assets/images/sec4_icon2.png');"></div><div class="text-inner"><h2>零成本投入</h2><p>逸康云提供专业平台运营
+支撑，实时影像上传、
+阅片，无基建投入</p></div></li>
+				<li class="li_03 right"><div class="img-inner" style="background-image: url('assets/images/sec4_icon3.png');"></div><div class="text-inner"><h2>业务提升</h2><p>影像专家医师远程诊断，
+提高影像诊断水平，
+留住病患，提升业务能力</p></div></li>
+				<li class="li_04 right"><div class="img-inner" style="background-image: url('assets/images/sec4_icon4.png');"></div><div class="text-inner"><h2>品牌塑造</h2><p>品牌医院专科指导医院
+技能培训、专业指导
+医院授牌服务</p></div></li>
 			</ul>
+		</div>
+		<div class="bg"></div>
+	</div>
+	<!--第四屏结束-->
+	<!--第五屏开始-->
+	<div class="section section5">
+		<div class="sec_01">
+			<h1>平台接入情况</h1>
+			<ul>
+				<li><div class="img-inner" style="background-image: url('assets/images/sec5_icon01.png');"></div><div class="text-inner"><p class="num">1000+</p><p>合作医院</p></div></li>
+				<li><div class="img-inner" style="background-image: url('assets/images/sec5_icon02.png');"></div><div class="text-inner"><p class="num">3000+</p><p>平台接入医生</p></div></li>
+				<li><div class="img-inner" style="background-image: url('assets/images/sec5_icon03.png');"></div><div class="text-inner"><p class="num">5000+</p><p>日均影像上传量</p></div></li>
+			</ul>
+		</div>
+		<div class="footer">
+			<p>版权所有  ©️2014-2018 ekangwang.cn  重庆途图科技有限公司    逾ICP备16005798号-2    </p>
+			<p>渝公网安备  50019002501336号   </p>
 		</div>
 
 	</div>
-	<!--第四屏结束-->
+	<!--第五屏结束-->
 
 
 
