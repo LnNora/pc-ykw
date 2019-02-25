@@ -34,11 +34,11 @@ html{font-size:23px;}
 
 @media (min-width: 1366px) {
 
-html{font-size: 23px;}
+html{font-size: 22px;}
 }  
 
 @media (min-width: 1440px) {
-html{font-size: 30px !important;}
+html{font-size: 24px;}
 } 
 
 @media (min-width: 1680px) {
@@ -54,6 +54,8 @@ html{font-size: 30px;}
 	padding: 0;
     box-sizing: border-box;
 }
+
+
 
 h1,h2,h3,h4{
 	font-weight: normal;
