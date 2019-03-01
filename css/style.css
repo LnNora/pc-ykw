@@ -113,6 +113,7 @@
 	justify-content: flex-start;
 	align-items: flex-start;
 	position: relative;
+	white-space: nowrap;
 }
 .menu .parent>li a{
 	padding: 0px 20px;
@@ -138,16 +139,40 @@
 	color: #fff;
 }
 
-@media (max-width: 820px){
-.header .menu{
-	display: none;
-}
+
+
 } 
 @media (max-width: 990px){
 .menu>ul>li{
 	padding: 15px 5px;
 }
 }
+.mobile-menu{
+	position: absolute;
+	right: 3px;
+	top: 50%;
+	margin-top: -10px;
+	font-size: 5px;
+	height: 20px;
+	width: 30px;
+	display: none;
+}
+.mobile-menu:before,.mobile-menu:after{
+	content: '';
+	display: block;
+	background-color: #000;
+	width: 30px;
+	height: 3px;
+}
+.strip{
+	background-color: #000;
+	display: block;
+	text-indent: 200%;
+	line-height: 3px;
+	margin: 3px 0;
+}
+
+
 /*第一屏*/
 .swiper-container1 {
       width: 100vw;
@@ -198,20 +223,14 @@
 .section p{
 	font-size: 0.6rem;
 }
-.section2{
-	background-image: url('../assets/images/2bg.png');
-}
-.section2 .sec_01{
-	width: 39.5vw;
-	margin: 0 auto;
-	display: none;
-}
+
 
 /*第三屏*/
-.section3{
+.section2{
+
 
 }
-.section.rep.section3 .bg{
+.section.rep.section2 .bg{
 	height: 16rem;
 	background-image: url('../assets/images/4bg.png');
 	background-repeat: no-repeat;
@@ -228,11 +247,11 @@
 	
 }
 
-.section3 .sec_01,.section4 .sec_01{
+.section2 .sec_01,.section3 .sec_01{
 	opacity: 0;
 	transition: all 1s;
 }
-.section3.active .sec_01,.section4.active .sec_01{
+.section2.active .sec_01,.section3.active .sec_01{
 	opacity: 1;
 	transition-delay: 0.6s;
 }
@@ -290,7 +309,7 @@
 	height: 64%; 
 	padding: 0 0.8rem;
 }
-.section3 .sec_02 .li_02 .text-inner{
+.section2 .sec_02 .li_02 .text-inner{
 	padding: 0 1.3rem;
 }
 .section.rep .sec_02 li .text-inner h2{
@@ -305,51 +324,51 @@
 .section.rep .sec_02 p{
 	font-size: 0.53rem;
 }
-.section3 .sec_02 li.left{
+.section2 .sec_02 li.left{
 	left: -800px;
 }
-.section3 .sec_02 li.right{
+.section2 .sec_02 li.right{
 	left: 800px;
 }
-.section3.active .sec_02 li.left{
+.section2.active .sec_02 li.left{
 	left:0;
 }
-.section3.active .sec_02 li.right{
+.section2.active .sec_02 li.right{
 	left: 0;
 }
 .section.rep.active ul li{
 	opacity: 1;
 }
-.section3 .bg-wrap .circle{
+.section2 .bg-wrap .circle{
 	border-radius: 50px;
 	background-color: #fcf3f3;
 	position: absolute;
 }
-.section3 .bg-wrap .c1{
+.section2 .bg-wrap .c1{
 	height: 1.2rem;
 	width: 1.2rem;
 	top: 25%;
 	margin-top: -0.6rem;
 	left: 4.7%;
 }
-.section3 .bg-wrap .c2{
+.section2 .bg-wrap .c2{
 	height: 0.87rem;
 	width: 0.87rem;
 	top: 40%;
 	left: 11.8%;
 }
-.section3 .bg-wrap .t{
+.section2 .bg-wrap .t{
 	width:1rem;
 	height:1rem;
 	position: absolute;
 	background-size: contain;
 }
-.section3 .bg-wrap .t1{
+.section2 .bg-wrap .t1{
 	background-image: url('../assets/images/t1.png');
 	top: 25%;
 	right: 4.7%;
 }
-.section3 .bg-wrap .t2{
+.section2 .bg-wrap .t2{
 	background-image: url('../assets/images/t2.png');
 	top: 43%;
 	right: 11.8%;
@@ -357,10 +376,10 @@
 
 
 /*第四屏*/
-.section4{
+.section3{
 
 }
-.section.section4 .sec_01 p{
+.section.section3 .sec_01 p{
 	margin: 0 auto;
 	margin-top: 1.5rem;
 	width: 70%;
@@ -373,46 +392,46 @@
 	margin-top: -4.3rem;
 	z-index: -1;
 }
-.section.section4 .bg{
+.section.section3 .bg{
 	background: linear-gradient(#fcf3ff,#fff);
 }
-.section4 .sec_02 li{
+.section3 .sec_02 li{
 	position: relative;
 	right: -100px;
 	opacity: 0;
 
 }
-.section4.active ul li{
+.section3.active ul li{
 	right: 0;
 	opacity: 1;
 
 }
-.section.section4 .sec_02 li .text-inner{
+.section.section3 .sec_02 li .text-inner{
 	background: #f7fbff;
 }
 
 
-.section4.active ul li.li_01{
+.section3.active ul li.li_01{
 	transition: all 1s;
 	transition-delay: 1s;
 }
 
-.section4.active ul li.li_02{
+.section3.active ul li.li_02{
 	transition-delay: 1.2s;
 }
-.section4.active ul li.li_03{
+.section3.active ul li.li_03{
 	transition-delay: 1.4s;
 }
-.section4.active ul li.li_04{
+.section3.active ul li.li_04{
 	transition-delay: 1.6s;
 }
 
 /*第五屏开始*/
-.section5{
+.section4{
 	background-image: url('../assets/images/8bg.png');
 	position: relative;
 }
-.section5 .sec_01{
+.section4 .sec_01{
 	border: solid 1px #daeffe;
 	background-color: #ebf3fa;
 	border-radius: 20px;
@@ -426,14 +445,14 @@
 	transition: all 1s;
 	transition-delay: 0.5s;
 }
-.section5.active .sec_01{
+.section4.active .sec_01{
 	bottom: 0;
 	opacity: 1;
 }
-.section5 .sec_01 h1{
+.section4 .sec_01 h1{
 	margin: 2.2rem 0 2rem 0;
 }
-.section5 .sec_01 h1:before,.section5 .sec_01 h1:after{
+.section4 .sec_01 h1:before,.section4 .sec_01 h1:after{
 	content: '';
 	display: inline-block;
 	width: 10rem;
@@ -443,20 +462,20 @@
 	line-height: 1px;
 	margin: 0 1.3rem;
 }
-.section5 .sec_01 ul{
+.section4 .sec_01 ul{
 	
 	text-align: center;
 }
-.section5 .sec_01 li{
+.section4 .sec_01 li{
 	display: inline-block;
 	margin-right: 3rem;
 	height: 4.2rem;
 	line-height: 4.2rem;
 }
-.section5 .sec_01 li:last-child{
+.section4 .sec_01 li:last-child{
 	margin-right: 0;
 }
-.section5 .sec_01 .img-inner{
+.section4 .sec_01 .img-inner{
 	width: 3.33rem;
 	height: 3.33rem;
 	background-size: contain;
@@ -464,18 +483,18 @@
 	background-position: center;
 	margin-right: 10px;
 }
-.section5 .sec_01 .text-inner{
+.section4 .sec_01 .text-inner{
 	line-height: 3rem;
 	
 }
-.section5 .sec_01 .text-inner .num{
+.section4 .sec_01 .text-inner .num{
 	font-size: 1.6rem;
 	color: #6094d0;
 }
-.section5 .sec_01 .text-inner p{
+.section4 .sec_01 .text-inner p{
 	font-size: 0.93rem;
 }
-.section5 .sec_01 .img-inner,.section5 .sec_01 .text-inner{
+.section4 .sec_01 .img-inner,.section4 .sec_01 .text-inner{
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -490,13 +509,43 @@
 	font-size: 0.53rem;
 	color: #404852;
 }
-.section5 .footer{
+.section4 .footer{
 	opacity: 0;
 	transition: all 1s;
 
 }
-.section5.active .footer{
+.section4.active .footer{
 
 	transition-delay: 1s;
 	opacity: 1;
+}
+
+/*移动端*/
+
+@media (max-width: 770px){
+	body {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+.header .menu{
+	display: none;
+}
+.section.rep .sec_01{
+	width: 80vw;
+	margin-top: 4vw;
+}
+.section.rep .sec_02{
+	margin-top: -60px;
+}
+.section.rep .sec_02 ul{
+	width: 80vw;
+}
+.section.rep .sec_02 ul li{
+	width: 38vw;
+	height: 38vw;
+	margin-right:2vw;
+}
+.section.rep .sec_02 ul li:first-child,.section.rep .sec_02 ul li:nth-child(2){
+	margin-bottom: 2vw;
+}
 }
