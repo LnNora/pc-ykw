@@ -103,7 +103,7 @@
 	width: 40rem;
 	margin: 0 auto;
 }
-.header a:hover{
+.header a:hover,.header a.on{
 	color: #6094d0;
 }
 .menu .parent>li{
@@ -131,11 +131,11 @@
 .menu .parent li:hover ul{
 	display: block;
 }
-.menu .child li:hover{
+.menu .child li:hover,.menu .child li.on{
 	background:  #6094d0;
 	
 }
-.menu .child li:hover a{
+.menu .child li:hover a,.menu .child li.on a{
 	color: #fff;
 }
 
@@ -274,8 +274,7 @@
     margin-top: -50px;
 }
 .section.rep .sec_02 ul{
-	width: 40rem;
-	margin: 0 auto;
+	
 	margin-top: 108px;
     /*position: absolute;
     left: 19vw;
@@ -283,19 +282,25 @@
    height: 8.33rem;
 
 }
-.section.rep .sec_02 ul li{
-	margin-right: 2rem;
-	width: 8.33rem;
-	height: 8.33rem;
+.common-ul{
+	width: 40rem;
+	margin: 0 auto;
+}
+.common-ul li{
 	display: inline-block;
-	float: left;
+	/*float: left;*/
 	border:solid 1px #fff;
 	box-shadow: 0 0 15px #ccc;
 	background: #fff;
 	border-radius: 10px;
+	overflow: hidden;
+}
+.section.rep .sec_02 ul li{
+	margin-right: 2rem;
+	width: 8.33rem;
+	height: 8.33rem;
 	position: relative;
 	opacity: 0;
-	overflow: hidden;
 	transition: all 1s;
 }
 
@@ -548,4 +553,174 @@
 .section.rep .sec_02 ul li:first-child,.section.rep .sec_02 ul li:nth-child(2){
 	margin-bottom: 2vw;
 }
+}
+
+/*远程会诊开始*/
+.sub-menu{
+	width: 100%;
+	background-color: #f9fcff;
+	box-shadow:inset 0px 15px 10px -15px #b9babd;
+}
+.sub-menu ul{
+	width: 34rem;
+	margin: 0 auto;
+	font-size: 0;
+}
+.sub-menu li{
+	width: 25%;
+
+}
+.sub-menu li a{
+	display: inline-block;
+	height: 2.67rem;
+	line-height: 2.67rem;
+}
+.sub-menu li a:before{
+	content: '';
+	display: inline-block;
+	width: 1.4rem;
+	height: 1.4rem;
+	background-size: contain;
+	vertical-align: middle;
+	margin-right: 0.67rem;
+}
+.sub-menu .li1 a:before{
+	background-image: url('../assets/images/sub_menu1.png');
+}
+.sub-menu .li2 a:before{
+	background-image: url('../assets/images/sub_menu2.png');
+}
+.sub-menu .li3 a:before{
+	background-image: url('../assets/images/sub_menu3.png');
+}
+.sub-menu .li4 a:before{
+	background-image: url('../assets/images/sub_menu4.png');
+}
+.telemedicine .intro{
+	background-image: url('../assets/images/sub_intro_bg1.png');
+}
+.telemedicine .sec03 li{
+	width:5.5rem;
+	height:10rem;
+	margin-right:1.4rem; 
+}
+.telemedicine .sec03 li .img-inner{
+	height: 35%;
+}
+.telemedicine .sec03 li .text-inner{
+	height: 65%;
+}
+.telemedicine .sec03 li:last-child{
+	margin-right: 0;
+}
+
+/*下面这些是二级页面的公用*/
+.sub-menu .on a{
+	color: #6094d0;
+}
+.inline li{
+	display: inline-block;
+}
+.below-header{margin-top: 2.3rem;}
+.sub.main h1{
+	margin: 1.33rem 0;
+}
+.sub.main .intro{
+	color: #fff;
+	height: 10.67rem;
+}
+.sub.main .intro .article{
+	width: 80%;
+	margin: 0 auto;
+}
+.sub.main .intro h1{
+	text-align: center;
+}
+.sub.main .intro h1 span{
+	font-size: 1.13rem;
+}
+.sub.main .intro p{
+	font-size: 0.6rem;
+	text-align: center;
+	line-height: 2.5;
+}
+.sub.main .sec{
+	width: 40rem;
+	margin: 0 auto;
+}
+.sub.main .sec h2{
+	font-size: 1rem;
+	line-height: 1rem;
+	padding: 1.33rem 0;
+}
+.sub.main .sec .title:before{
+	content: '';
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background-size: contain;
+	background-position: center;
+	vertical-align: middle;
+	margin-right: 0.6rem;
+}
+.sub.main .sec01 h2:before{
+	background-image: url("../assets/images/sub01_icon01.png");
+}
+.sub.main .sec02 h2:before{
+	background-image: url("../assets/images/sub01_icon02.png");
+}
+.sub.main .sec03 .title:before{
+	background-image: url("../assets/images/sub01_icon03.png");
+}
+.sub.main .sec li{
+	text-align: center;
+	vertical-align: top;
+}
+.sub.main .sec02 li img,.sub.main .sec02 li .text-inner{
+	width: 50%;
+	display:block;
+	margin: 0 auto;
+}
+.sub.main .sec02 li img{
+	margin-bottom: 0.6rem;
+}
+.sub.main .sec li .text-inner span{
+	display: block;
+}
+.one-third{
+	width: 33.3%;
+}
+.one-sixth{
+	width: 16.66%;
+}
+.f0{font-size: 0;}
+.f20{font-size: 0.67rem;}
+.f34{font-size: 1.13rem;}
+.c-active{
+	color: #6094d0;
+}
+.center{
+	text-align: center;
+}
+.footer.sub{
+	position: static;
+	margin: 1.87rem 0;
+}
+.header.fixed{
+	position: fixed;
+	background-color: #fff;
+}
+/*通用的长方形样式*/
+.common-ul li h2{
+	font-size: 0.87rem;
+	text-align: center;
+}
+.common-ul li .text-inner{
+	font-size: 0.53rem;
+	background-color: #f1faff;
+}
+.common-ul li .img-inner{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
