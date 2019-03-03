@@ -559,7 +559,7 @@
 .sub-menu{
 	width: 100%;
 	background-color: #f9fcff;
-	box-shadow:inset 0px 15px 10px -15px #b9babd;
+	/*box-shadow:inset 0px 15px 10px -15px #b9babd;*/
 }
 .sub-menu ul{
 	width: 34rem;
@@ -599,17 +599,49 @@
 .telemedicine .intro{
 	background-image: url('../assets/images/sub_intro_bg1.png');
 }
+.telemedicine .sec01 .rect{
+	width: 40rem;
+	height: 13.4rem;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #e6f5ff;
+	background-image: url('../assets/images/sub01_sec01_bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 85%;
+
+}
 .telemedicine .sec03 li{
 	width:5.5rem;
 	height:10rem;
 	margin-right:1.4rem; 
 }
+.telemedicine .sec03 .li_01:hover{
+	box-shadow: 0 0 15px #ffb780;
+}
+.telemedicine .sec03 .li_02:hover{
+	box-shadow: 0 0 15px #ff9381;
+}
+.telemedicine .sec03 .li_03:hover{
+	box-shadow: 0 0 15px #ffaec6;
+}
+.telemedicine .sec03 .li_04:hover{
+	box-shadow: 0 0 15px #e8baff;
+}
+.telemedicine .sec03 .li_05:hover{
+	box-shadow: 0 0 15px #ffb780;
+}
+.telemedicine .sec03 .li_06:hover{
+	box-shadow: 0 0 15px #ffaec6;
+}
+
 .telemedicine .sec03 li .img-inner{
 	height: 35%;
 }
 .telemedicine .sec03 li .text-inner{
 	height: 65%;
+	padding: 0 0.5rem;
 }
+
 .telemedicine .sec03 li:last-child{
 	margin-right: 0;
 }
@@ -628,13 +660,23 @@
 .sub.main .intro{
 	color: #fff;
 	height: 10.67rem;
+	position: relative;
 }
 .sub.main .intro .article{
 	width: 80%;
-	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(0,-50%);
 }
 .sub.main .intro h1{
 	text-align: center;
+	margin: 0;
+	margin-bottom: 1rem;
+	line-height: 1;
+}
+.sub.main .intro h1 span:first-child{
+	margin-right: 2.5rem;
 }
 .sub.main .intro h1 span{
 	font-size: 1.13rem;
@@ -652,6 +694,7 @@
 	font-size: 1rem;
 	line-height: 1rem;
 	padding: 1.33rem 0;
+	color: #404852;
 }
 .sub.main .sec .title:before{
 	content: '';
@@ -680,6 +723,7 @@
 	width: 50%;
 	display:block;
 	margin: 0 auto;
+	color: #6e7988;
 }
 .sub.main .sec02 li img{
 	margin-bottom: 0.6rem;
@@ -709,6 +753,7 @@
 .header.fixed{
 	position: fixed;
 	background-color: #fff;
+	box-shadow: 0px 15px 10px -15px #b9babd;
 }
 /*通用的长方形样式*/
 .common-ul li h2{
@@ -718,6 +763,10 @@
 .common-ul li .text-inner{
 	font-size: 0.53rem;
 	background-color: #f1faff;
+	
+}
+.common-ul li .text-inner p{
+	color: #6e7988;
 }
 .common-ul li .img-inner{
 	width: 100%;
