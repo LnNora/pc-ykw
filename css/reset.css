@@ -95,3 +95,51 @@ button{
 	display: flex;
 	justify-content: space-between;
 }
+/*通用的长方形样式*/
+.common-ul li h2{
+	font-size: 0.87rem;
+	text-align: center;
+}
+.common-ul li .text-inner{
+	font-size: 0.53rem;
+	background-color: #f1faff;
+	
+}
+.common-ul li .text-inner p{
+	color: #6e7988;
+}
+.common-ul li .img-inner{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/*通用的圆形样式*/
+.common-circle .circle{
+	width: 50%;
+	padding: 25% 0;
+	margin: 0 auto;
+	border-radius: 100px;
+	margin-bottom: 0.73rem;
+	position: relative;
+
+}
+.common-circle .circle p{
+	width: 2rem;
+	font-size: 1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -1.1rem;
+	margin-left: -1rem;
+	color: #fff;
+
+}
+/*有蒙版那种通用长方形样式*/
+.common-rect li{
+   border-radius: 7px;
+   background-size: cover;
+   background-repeat: no-repeat;
+}

@@ -646,6 +646,9 @@
 	margin-right: 0;
 }
 
+
+
+
 /*下面这些是二级页面的公用*/
 .sub-menu .on a{
 	color: #6094d0;
@@ -703,6 +706,7 @@
 	height: 1.2rem;
 	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	vertical-align: middle;
 	margin-right: 0.6rem;
 }
@@ -734,12 +738,18 @@
 .one-third{
 	width: 33.3%;
 }
+.quarter{
+	width: 25%;
+}
 .one-sixth{
 	width: 16.66%;
 }
 .f0{font-size: 0;}
+.f18{font-size: 0.6rem;}
 .f20{font-size: 0.67rem;}
+.f26{font-size: 0.87rem}
 .f34{font-size: 1.13rem;}
+.f46{font-size: 1.53rem;}
 .c-active{
 	color: #6094d0;
 }
@@ -755,21 +765,153 @@
 	background-color: #fff;
 	box-shadow: 0px 15px 10px -15px #b9babd;
 }
-/*通用的长方形样式*/
-.common-ul li h2{
+
+/*托管服务开始*/
+.sub.main.trusteeship .sec01 h2:before {
+    background-image: url(../assets/images/sub02_icon01.png);
+}
+.sub.main.trusteeship .sec02 h2:before {
+    background-image: url(../assets/images/sub01_icon03.png);
+}
+.sub.main.trusteeship .sec03 h2:before {
+    background-image: url(../assets/images/sub02_icon03.png);
+}
+.trusteeship .intro{
+	background-image: url('../assets/images/sub_intro_bg1.png');
+}
+.trusteeship .common-circle .li_01 .circle{
+	background: #ffb780;
+}
+.trusteeship .common-circle .li_02 .circle{
+	background: #ff9381;
+}
+.trusteeship .common-circle .li_03 .circle{
+	background: #ffaec6;
+}
+.trusteeship .common-circle .li_04 .circle{
+	background: #e8baff;
+}
+.sub.main.trusteeship .common-circle .text-inner{
+	width: 70%;
+}
+.trusteeship .common-rect li{
+	height: 12rem;
+	width: 8.33rem;
+	margin-right: 2.22rem;
+}
+.trusteeship .common-rect li:last-child{
+	margin-right: 0;
+}
+.trusteeship .common-rect .down{
+	padding: 0 1.5rem;
+}
+.sub.main.trusteeship .common-rect h2{
+	font-size: 1.53rem;
+	text-align: left;
+	padding-left: 1.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0.5rem;
+}
+.trusteeship .common-rect .li_01{
+	background-image: url(../assets/images/sub02_sec03_bg1.png);
+}
+.trusteeship .common-rect .li_02{
+	background-image: url(../assets/images/sub02_sec03_bg2.png);
+}
+.trusteeship .common-rect .li_03{
+	background-image: url(../assets/images/sub02_sec03_bg3.png);
+}
+.trusteeship .common-rect .li_04{
+	background-image: url(../assets/images/sub02_sec03_bg4.png);
+}
+
+/*这部分也可以提出来公用*/
+.trusteeship .common-ul li{
+	width: 13.33rem;
+	height: 6rem;
+	margin-right: 6rem;
+	margin-bottom: 1.5rem;
+	position: relative;
+	border: none;
+}
+.sub.main.trusteeship .common-ul .li_03,.sub.main.trusteeship .common-ul .li_04{
+	left: 6rem;
+}
+.sub.main.trusteeship .common-ul h2{
+	padding: 0;
 	font-size: 0.87rem;
+}
+.sub.main.trusteeship .common-ul h2:after{
+	content: '';
+	display: inline-block;
+	height: 1px;
+	width: 2.67rem;
+	line-height: 0.87rem;
+	
+	vertical-align: middle;
+	margin-left: 0.53rem;
+}
+.sub.main.trusteeship .common-ul .li_01 h2:after{
+	background: #ffb780;
+}
+.sub.main.trusteeship .common-ul .li_02 h2:after{
+	background: #ff9381;
+}
+.sub.main.trusteeship .common-ul .li_03 h2:after{
+	background: #ffaec6;
+}
+.sub.main.trusteeship .common-ul .li_04 h2:after{
+	background: #e8baff;
+}
+.sub.main.trusteeship .common-ul h2:before{
+	content: '';
+	display: inline-block;
+	width: 1.4rem;
+	height: 1.4rem;
+	vertical-align: middle;
+	line-height: 0.87rem;
+	margin-right: 0.93rem;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.sub.main.trusteeship .common-ul .li_01 h2:before{
+	background-image: url(../assets/images/sub02_sec01_icon01.png);
+}
+.sub.main.trusteeship .common-ul .li_02 h2:before{
+	background-image: url(../assets/images/sub02_sec01_icon02.png);
+}
+.sub.main.trusteeship .common-ul .li_03 h2:before{
+	background-image: url(../assets/images/sub02_sec01_icon03.png);
+}
+.sub.main.trusteeship .common-ul .li_04 h2:before{
+	background-image: url(../assets/images/sub02_sec01_icon04.png);
+}
+
+.trusteeship .common-ul .text-inner,.trusteeship .common-ul .img-inner{
+	height: 50%;
+	position: relative;
+}
+.trusteeship .common-ul .text-inner p,.trusteeship .common-ul .img-inner h2{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
 	text-align: center;
 }
-.common-ul li .text-inner{
-	font-size: 0.53rem;
-	background-color: #f1faff;
-	
+.trusteeship .common-ul .text-inner p{
+	padding: 0 2rem;
+	box-sizing: border-box;
 }
-.common-ul li .text-inner p{
-	color: #6e7988;
+.sub.main.trusteeship .common-ul .li_01 .text-inner{
+	background:#e5ebfe;
 }
-.common-ul li .img-inner{
-	width: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
+.sub.main.trusteeship .common-ul .li_02 .text-inner{
+	background:#e6f2fe;
+}
+.sub.main.trusteeship .common-ul .li_03 .text-inner{
+	background:#e4f5fd;
+}
+.sub.main.trusteeship .common-ul .li_04 .text-inner{
+	background:#dff7f3;
 }
