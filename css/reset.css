@@ -103,10 +103,12 @@ button{
 .common-ul li .text-inner{
 	font-size: 0.53rem;
 	background-color: #f1faff;
+	position: relative;
 	
 }
 .common-ul li .text-inner p{
 	color: #6e7988;
+	
 }
 .common-ul li .img-inner{
 	width: 100%;
@@ -132,14 +134,25 @@ button{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	margin-top: -1.1rem;
 	margin-left: -1rem;
 	color: #fff;
+	transform: translate(0,-50%);
 
+
+}
+.common-circle .circle .text-inner{
+	color: #404852;
 }
 /*有蒙版那种通用长方形样式*/
 .common-rect li{
    border-radius: 7px;
    background-size: cover;
    background-repeat: no-repeat;
+}
+.common-rect .img-inner{
+	width: 100%;
+	height: 2.4rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
