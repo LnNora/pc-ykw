@@ -49,128 +49,8 @@
 	background-repeat: no-repeat;
 }
 
-.header{
-	position: absolute;
-	top: 0;
-	z-index: 1;
-	/*background: rgba(255,255,255,0.9);*/
-	width: 100%;
-
-}
-.header .menu{
-	line-height: 47px;
-	font-size: 0.6rem;
-}
-.menu>ul{
-	display: flex;
-	display: -webkit-flex;
-	margin-left: 16rem;
-}
-.menu li{
-	display: inline-block;
-}
-.header .logo{
-	position: absolute;
-	left: 0;
-	top: 50%;
-	font-size: 0.8rem;
-	margin-top: -0.6rem;
-	
-}
-.header .logo{
-
-}
-.header a{
-	color: #000;
-}
-.header .logo a{
-	color:#6094d0;
-	height: 1.2rem;
-	line-height: 1.2rem
-}
-.header .logo a img{
-	vertical-align: middle;
-	margin-right: 0.6rem;
-	width: 1.2rem;
-}
-.header .wrap{
-	display: flex;
-	display: -webkit-flex;
-	justify-content: space-around;
-	align-items: center;
-	position: relative;
-	min-height: 2.3rem;
-	width: 40rem;
-	margin: 0 auto;
-}
-.header a:hover,.header a.on{
-	color: #6094d0;
-}
-.menu .parent>li{
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	position: relative;
-	white-space: nowrap;
-}
-.menu .parent>li a{
-	padding: 0px 20px;
-}
-.menu .parent li ul{
-	width: 100%;
-	position: absolute;
-	top: 100%;
-	display: none;
-	background-color: #fafafa;
-}
-.menu .parent li ul>li{
-	display: block;
-}
-.menu .parent li:hover ul{
-	display: block;
-}
-.menu .child li:hover,.menu .child li.on{
-	background:  #6094d0;
-	
-}
-.menu .child li:hover a,.menu .child li.on a{
-	color: #fff;
-}
 
 
-
-} 
-@media (max-width: 990px){
-.menu>ul>li{
-	padding: 15px 5px;
-}
-}
-.mobile-menu{
-	position: absolute;
-	right: 3px;
-	top: 50%;
-	margin-top: -10px;
-	font-size: 5px;
-	height: 20px;
-	width: 30px;
-	display: none;
-}
-.mobile-menu:before,.mobile-menu:after{
-	content: '';
-	display: block;
-	background-color: #000;
-	width: 30px;
-	height: 3px;
-}
-.strip{
-	background-color: #000;
-	display: block;
-	text-indent: 200%;
-	line-height: 3px;
-	margin: 3px 0;
-}
 
 
 /*第一屏*/
@@ -524,6 +404,55 @@
 	transition-delay: 1s;
 	opacity: 1;
 }
+/*留言板*/
+.board{
+	width: 16.67rem;
+	height: 20rem;
+	border: solid 1px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -10rem;
+	background: #fff;
+	z-index: 10;
+}
+.board .title{
+	background: linear-gradient(to right,#5acfe7,#787df0);
+	height: 9%;
+}
+.board label{
+	font-size: 16px;
+	display: inline-block;
+	width: 25%;
+	text-align: right;
+
+}
+.board label:before{
+	content: '\273B';
+    font-size: 1px;
+	display: inline-block;
+	color: red;
+	margin-right: 3px;
+}
+.board .row{
+	margin-bottom: 1rem;
+}
+.board input{
+	width: 70%;
+	border-radius: 3px;
+	line-height: 1.5;
+	padding: 4px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.board #message{
+	height: 5rem;
+}
+.board .btn{
+	display: inline-block;
+	width: 40%;
+	margin: 0 auto;
+}
 
 /*移动端*/
 
@@ -748,37 +677,7 @@
 .sub.main .sec li .text-inner span{
 	display: block;
 }
-.one-third{
-	width: 33.3%;
-}
-.quarter{
-	width: 25%;
-}
-.one-sixth{
-	width: 16.66%;
-}
-.f0{font-size: 0;}
-.f18{font-size: 0.6rem;}
-.f20{font-size: 0.67rem;}
-.f26{font-size: 0.87rem}
-.f30{font-size: 1rem;}
-.f34{font-size: 1.13rem;}
-.f46{font-size: 1.53rem;}
-.c-active{
-	color: #6094d0;
-}
-.center{
-	text-align: center;
-}
-.footer.sub{
-	position: static;
-	margin: 1.87rem 0;
-}
-.header.fixed{
-	position: fixed;
-	background-color: #fff;
-	box-shadow: 0px 15px 10px -15px #b9babd;
-}
+
 
 /*托管服务开始*/
 .sub.main.trusteeship .sec01 h2:before {
@@ -907,7 +806,6 @@
 	width: 11rem;
 	height: 12rem;
 	margin-right: 2.33rem;
-	padding: 2.5rem 0;
 }
 .education .common-rect .li_01{
 	background-image: url('../assets/images/sub03_sec02_bg1.png');
@@ -921,15 +819,12 @@
 .education .common-rect .down,.health .common-rect .down{
 	margin-top: 1.67rem;
 }
-.education .common-rect .down:after,.health .common-rect .down:after{
-	content: '';
-	display: block;
-	height: 2px;
-	width: 5.33rem;
-	background-color: #000;
-	margin: 0 auto;
-	margin-top: 1.4rem;
+
+
+.education .common-rect .emit-mask .down{
+	margin-top: 0.8rem;
 }
+
 .education .common-circle .text-inner{
 	width: 55%;
 	margin: 0 auto;
@@ -961,6 +856,12 @@
 }
 .health .common-rect .li_03{
 	background-image: url('../assets/images/sub03_sec02_bg3.png');
+}
+.health .common-rect .emit-mask .down{
+	margin-top: 0.2rem;
+}
+.health .common-rect .emit-mask h2:after{
+	height: 0;
 }
 .health .common-ul li{
 	width: 8.33rem;
