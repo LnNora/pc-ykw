@@ -95,6 +95,9 @@ input{
 	border: solid 1px #eee;
 	-webkit-appearance: none;
 }
+textarea{
+	resize:none;
+}
 .f-18{
 	font-size: 18px;
 }
@@ -111,6 +114,7 @@ input{
 	z-index: 3;
 	/*background: rgba(255,255,255,0.9);*/
 	width: 100%;
+	background-color: #fff;
 
 }
 .header .menu{

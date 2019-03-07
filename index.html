@@ -74,14 +74,10 @@
 			delay: 2500,
 			disableOnInteraction: false,
 		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		/*navigation: {
+		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
-		},*/
+		}
 	});
 	
 
@@ -133,7 +129,7 @@
 
 			</div>
 			<!--移动端菜单-->
-				<div class="mobile-menu"><span class="strip">menu</span></div>
+			<div class="mobile-menu"><span class="strip">menu</span></div>
 		</header>
 		<!--header End-->
 
@@ -144,14 +140,22 @@
 		<!-- Swiper -->
 		<div class="swiper-container swiper-container1">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" style="background-image: url('assets/images/sec1_swiper1.png');"></div>
+				<div class="swiper-slide" style="background-image: url('assets/images/sec1_swiper1.png');">
+					<div class="swiper-content">
+						<div>
+						<h1>互联网医学影像服务提供商</h1>
+						<p class="f24">致力于为医疗机构及患者提供 “一站式” 医学影像服务</p>
+						<button onclick="showBoard()">申请加入</button>
+					</div>
+					</div>
+				</div>
 				<div class="swiper-slide" style="background-image: url('assets/images/sec1_swiper2.png');"></div>
 			</div>
-			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
-			<!-- Add Arrows 
+			<!-- Add Pagination 
+			<div class="swiper-pagination"></div>-->
+			<!-- Add Arrows -->
 			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>-->
+			<div class="swiper-button-prev"></div>
 		</div>
 		<!--swiper end-->
 		<!--section footer
@@ -209,12 +213,13 @@
 
 			</div>
 			<!--移动端菜单-->
-				<div class="mobile-menu"><span class="strip">menu</span></div>
+			<div class="mobile-menu"><span class="strip">menu</span></div>
 		</header>
 		<!--header End-->
 		<div class="sec_01">
 			<h1>我是远程影像服务提供方</h1>
-			<p>随着医学影像的发展，国内医学影像行业的变革日益提上日程，构建医学影像传输、指导、输出的互联网平台，更好地服务有影像诊断需求的医疗机构及患者。</p>
+			<p>三甲医院、二甲医院，影像医生团队等为基层医疗机构提供远程影像会诊服务，
+构建基于医学影像传输、指导、输出的互联网平台，能够更好的服务医疗机构及患者。</p>
 			<button>申请加入</button>
 		</div>
 		<div class="sec_02">
@@ -225,12 +230,12 @@
 				<li class="li_02 left"><div class="img-inner" style="background-image: url('assets/images/sec3_icon02.png');"></div><div class="text-inner"><h2>零成本投入</h2><p>逸康云提供专业平台
 					运营支撑，实时阅片，
 				无基建投入</p></div></li>
-				<li class="li_03 right"><div class="img-inner" style="background-image: url('assets/images/sec3_icon03.png');"></div><div class="text-inner"><h2>业务协同</h2><p>随时随地为更多医院及患者
-					服务，有效利用医生碎片化
-				时间，提升医疗资源利用率</p></div></li>
-				<li class="li_04 right"><div class="img-inner" style="background-image: url('assets/images/sec3_icon04.png');"></div><div class="text-inner"><h2>资源共享</h2><p>基于上下级医院远程影像，
-					实现区域内业务协同，
-				建立双向转诊绿色通道</p></div></li>
+				<li class="li_03 right"><div class="img-inner" style="background-image: url('assets/images/sec3_icon03.png');"></div><div class="text-inner"><h2>赋能医生</h2><p>随时随地为更多医院及患者
+服务，有效利用医生碎片化
+时间，提升医疗资源利用率</p></div></li>
+				<li class="li_04 right"><div class="img-inner" style="background-image: url('assets/images/sec3_icon04.png');"></div><div class="text-inner"><h2>业务协同</h2><p>构建医疗机构影像传输桥梁，
+实现区域内业务协同，
+建立双向转诊绿色通道</p></div></li>
 			</ul>
 		</div>
 		<div class="bg">
@@ -278,29 +283,28 @@
 
 			</div>
 			<!--移动端菜单-->
-				<div class="mobile-menu"><span class="strip">menu</span></div>
+			<div class="mobile-menu"><span class="strip">menu</span></div>
 		</header>
 		<!--header End-->
 		<div class="sec_01">
-			<h1>我是医疗机构</h1>
-			<h2>（远程影像服务需求方）</h2>
+			<h1>我是远程影像服务需求方</h1>
 			<p>基层医疗机构影像诊断能力相对薄弱，疑难病症无法处理，无法留住病患，远程影像诊断需求迫切。</p>
 			<button>申请加入</button>
 		</div>
 		<div class="sec_02">
 			<ul class="common-ul f0">
 				<li class="li_01 left"><div class="img-inner" style="background-image: url('assets/images/sec4_icon1.png');"></div><div class="text-inner"><h2>远程会诊</h2><p>基层医疗机构自主选择
-医院上传影像，解决医院
-影像医生资源缺乏的困局</p></div></li>
+					医院上传影像，解决医院
+				影像医生资源缺乏的困局</p></div></li>
 				<li class="li_02 left"><div class="img-inner" style="background-image: url('assets/images/sec4_icon2.png');"></div><div class="text-inner"><h2>零成本投入</h2><p>逸康云提供专业平台运营
-支撑，实时影像上传、
-阅片，无基建投入</p></div></li>
+					支撑，实时影像上传、
+				阅片，无基建投入</p></div></li>
 				<li class="li_03 right"><div class="img-inner" style="background-image: url('assets/images/sec4_icon3.png');"></div><div class="text-inner"><h2>业务提升</h2><p>影像专家医师远程诊断，
-提高影像诊断水平，
-留住病患，提升业务能力</p></div></li>
+					提高影像诊断水平，
+				留住病患，提升业务能力</p></div></li>
 				<li class="li_04 right"><div class="img-inner" style="background-image: url('assets/images/sec4_icon4.png');"></div><div class="text-inner"><h2>品牌塑造</h2><p>品牌医院专科指导医院
-技能培训、专业指导
-医院授牌服务</p></div></li>
+					技能培训、专业指导
+				医院授牌服务</p></div></li>
 			</ul>
 		</div>
 		<div class="bg"></div>
@@ -342,11 +346,12 @@
 
 			</div>
 			<!--移动端菜单-->
-				<div class="mobile-menu"><span class="strip">menu</span></div>
+			<div class="mobile-menu"><span class="strip">menu</span></div>
 		</header>
 		<!--header End-->
+		<h1>平台接入情况</h1>
 		<div class="sec_01">
-			<h1>平台接入情况</h1>
+			
 			<ul>
 				<li><div class="img-inner" style="background-image: url('assets/images/sec5_icon01.png');"></div><div class="text-inner"><p class="num">1000+</p><p>合作医院</p></div></li>
 				<li><div class="img-inner" style="background-image: url('assets/images/sec5_icon02.png');"></div><div class="text-inner"><p class="num">3000+</p><p>平台接入医生</p></div></li>
@@ -363,36 +368,79 @@
 
 	<!--留言板开始-->
 	<div class="board">
-		<div class="title"></div>
-			<form method="post">
-				<fieldset>
-					<div class="fields">
-						<p class="row">
-							<label for="name">姓名</label>
-							<input type="text" name="name" id="name" placeholder="请输入您的真实姓名" />
-						</p>
-						<p class="row">
-							<label for="phone">联系电话</label>
-							<input type="tel" name="phone" id="phone" placeholder="请正确输入您的固定或移动电话号码" />
-						</p>
-						<p class="row">
-							<label for="email">邮箱</label>
-							<input type="email" name="email" id="email" placeholder="请输入您的邮箱" />
-						</p>
-						<p class="row">
-							<label for="post">所属职位</label>
-							<input type="text" name="post" id="post" placeholder="例：影像医生，技师，主任医师等" />
-						</p>
-												<p class="row">
-							<label>留言</label>
-							<textarea id="message"></textarea>
-						</p>
-					</div>
-				</fieldset>
-				<input type="submit" value="提交" class="btn">
-			</form>
+		<div class="title">
+			<h3>逸康云影像留言</h3>
+			<div class="btns">
+				<div title="最小化" class="minimize"></div>
+				<div title="扩大" class="enlarge"></div>
+				<div title="关闭" class="close" onclick="closeBoard()"></div>
+			</div>
+		</div>
+		<form method="get" onsubmit="return toVaild()">
+			<fieldset>
+				<div class="fields">
+					<p class="row">
+						<label>服务类型</label>
+						<select>
+							<option value ="volvo">个人医生</option>
+							<option value ="saab">公立医疗机构</option>
+							<option value="opel">私立医疗机构</option>
+							<option value="audi">专科联盟</option>
+						</select>
+					</p>
+					<p class="row">
+						<label for="name">姓名</label>
+						<input type="text" name="name" id="name" class="require" placeholder="请输入您的真实姓名" />
+						<div class="hint">请输入您的真实姓名</div>
+					</p>
+					<p class="row">
+						<label for="phone">联系电话</label>
+						<input type="tel" name="phone" id="phone" class="require" placeholder="请正确输入您的固定或移动电话号码" />
+						<div class="hint">请输入正确号码格式</div>
+					</p>
+					<p class="row">
+						<label for="email" class="optional">邮箱</label>
+						<input type="email" name="email" id="email" placeholder="请输入您的邮箱" />
+					</p>
+					<p class="row">
+						<label for="post" class="optional">所属职位</label>
+						<input type="text" name="post" id="post" placeholder="例：影像医生，技师，主任医师等" />
+					</p>
+					<p class="row">
+						<label>留言</label>
+						<textarea id="message" class="require"></textarea>
+						<div class="hint">留言不能为空</div>
+					</p>
+				</div>
+			</fieldset>
+			<input type="submit" value="提交" class="btn">
+		</form>
 		
 	</div>
+	<script type="text/javascript">
+		function toVaild(){
+			var isIllegal;
+				 $(".require").each(function(){
+				 	if($(this).val()==""){
+				 		$(this).parent().next().show();
+				 		isIllegal=false;
+				 	}else{
+				 		$(this).parent().next().hide();
+				 	}
+
+				 })
+
+				 if(isIllegal==false){
+				 	return false;
+				 }
+				}
+				function showBoard(){
+					$(".board").show();
+				}
+				function closeBoard(){
+					$(".board").hide();
+				}
+			</script>
 
 
 
@@ -412,7 +460,6 @@
 
 
 
+		</body>
 
-</body>
-
-</html>
+		</html>
