@@ -241,11 +241,14 @@ textarea{
 	width: 16.66%;
 }
 .f0{font-size: 0;}
+.f16{font-size:0.53rem; }
 .f18{font-size: 0.6rem;}
 .f20{font-size: 0.67rem;}
+.f22{font-size: 0.73rem;}
 .f26{font-size: 0.87rem}
 .f30{font-size: 1rem;}
 .f34{font-size: 1.13rem;}
+.f35{font-size: 1.17rem;}
 .f46{font-size: 1.53rem;}
 .c-active{
 	color: #6094d0;
@@ -255,7 +258,7 @@ textarea{
 }
 .footer.sub{
 	position: static;
-	margin: 1.87rem 0;
+	padding: 3rem 0;
 }
 .header.fixed{
 	position: fixed;
@@ -291,6 +294,7 @@ textarea{
 	border-radius: 100px;
 	margin-bottom: 0.73rem;
 	position: relative;
+	box-shadow: 0 0 20px #04bcd0;
 
 }
 .common-circle .circle p{
@@ -397,4 +401,49 @@ textarea{
 }
 .emit-mask .down:after{
 	height: 0;
+}
+/*普通ul*/
+.sub.main .sec .normal-ul li{
+	text-align: left;
+	margin: 0 0.8rem;
+}
+.normal-ul{
+	background: #f1faff;
+	border-radius: 7px;
+	box-shadow: 2px 2px 15px #ccc;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+.normal-ul li:before{
+	content: '';
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background: #04bcd0;
+	border-radius: 100px;
+	margin-right: 0.5rem;
+	vertical-align: middle;
+	line-height: 0.6rem;
+}
+/*li水平放置元素*/
+li.horizontal{
+	box-shadow: 0 0 15px #ccc;
+	border-radius: 10px;
+	overflow: hidden;
+
+}
+li.horizontal .left{
+	float: left;
+}
+
+li.horizontal .left,li.horizontal .right{
+	height: 100%;
+}
+.sub_intro_png{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
 }

@@ -372,7 +372,8 @@
 			<h3>逸康云影像留言</h3>
 			<div class="btns">
 				<div title="最小化" class="minimize"></div>
-				<div title="扩大" class="enlarge"></div>
+				<div title="扩大" class="enlarge" onclick="enlarge()"></div>
+				<div title="窗口化" class="shrink hide" onclick="shrink()"></div>
 				<div title="关闭" class="close" onclick="closeBoard()"></div>
 			</div>
 		</div>
@@ -439,6 +440,16 @@
 				}
 				function closeBoard(){
 					$(".board").hide();
+				}
+				function enlarge(){
+					$(".board").addClass("large");
+					$(".enlarge").hide();
+					$(".shrink").removeClass("hide");
+				}
+				function shrink(){
+					$(".board").removeClass("large");
+					$(".enlarge").show();
+					$(".shrink").addClass("hide");
 				}
 			</script>
 

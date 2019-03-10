@@ -441,6 +441,9 @@
 	overflow: hidden;
 	display: none;
 }
+.board.large{
+	height: 25rem;
+}
 .board .title{
 	background: linear-gradient(to right,#5acfe7,#787df0);
 	height: 54px;
@@ -465,19 +468,29 @@
 	width: 12px;
 	height: 8px;
 	border: solid 2px;
-	border-top: solid 4px;
-	
+	border-top: solid 4px;	
 }
+
 .board .minimize{
 	width: 15px;
 	height: 2px;
 	background: #fff;
 }
-.board .enlarge,.board .minimize,.board .close{
+.board .enlarge,.board .minimize,.board .close,.board .shrink{
 	display: inline-block;
 	line-height: 54px;
 	vertical-align: middle;
 	margin-right: 15px;
+}
+.board .shrink{
+	width: 15px;
+	height: 15px;
+	background-image: url(../assets/images/shrink.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.board .shrink.hide{
+	display: none;
 }
 .hint{
 	color: #d81e06;
@@ -603,6 +616,10 @@
 	width: 25%;
 
 }
+.sub-menu2 li{
+	width: 20%;
+
+}
 .sub-menu li a{
 	display: inline-block;
 	height: 2.67rem;
@@ -648,36 +665,24 @@
 .telemedicine .sec01 .rect{
 	width: 40rem;
 	height: 13.4rem;
+	background-image: url('../assets/images/sub01_sec01_bg.png');
+	background-color: #fff;
+
+}
+.main .rect{
 	border-radius: 10px;
 	box-shadow: 0 0 15px #e6f5ff;
-	background-image: url('../assets/images/sub01_sec01_bg.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 85%;
-
 }
 .telemedicine .sec03 li{
 	width:5.5rem;
 	height:10rem;
 	margin-right:1.4rem; 
 }
-.telemedicine .sec03 .li_01:hover{
-	box-shadow: 0 0 15px #ffb780;
-}
-.telemedicine .sec03 .li_02:hover{
-	box-shadow: 0 0 15px #ff9381;
-}
-.telemedicine .sec03 .li_03:hover{
-	box-shadow: 0 0 15px #ffaec6;
-}
-.telemedicine .sec03 .li_04:hover{
-	box-shadow: 0 0 15px #e8baff;
-}
-.telemedicine .sec03 .li_05:hover{
-	box-shadow: 0 0 15px #ffb780;
-}
-.telemedicine .sec03 .li_06:hover{
-	box-shadow: 0 0 15px #ffaec6;
+.telemedicine .sec03 li:hover{
+	box-shadow: 0 0 15px #3e7dcc;
 }
 
 .telemedicine .sec03 li .img-inner{
@@ -718,6 +723,27 @@
 	left: 10%;
 	transform: translate(0,-50%);
 }
+.intro2{
+	background-image: url('../assets/images/sub_intro2.png');
+	background-size: cover;
+	background-position: center;
+}
+.sub.main .intro .article2{
+	width: 70%;
+	position: absolute;
+	top: 50%;
+	left: 23%;
+	transform: translate(0,-50%);
+	z-index: 2;
+}
+.sub.main .intro .article2 h1,.sub.main .intro .article2 p{
+	text-align: left;
+}
+.sub.main .intro .article2 span{
+	display: block;
+	line-height: 1.5;
+	padding: 0.3rem 0;
+}
 .sub.main .intro h1{
 	text-align: center;
 	margin: 0;
@@ -736,6 +762,10 @@
 	line-height: 2.5;
 }
 .sub.main .sec{
+	width: 100%;
+	position: relative;
+}
+.sub.main .sec>ul,.sub.main .sec>h2,.sub.main .sec>div{
 	width: 40rem;
 	margin: 0 auto;
 }
@@ -744,7 +774,44 @@
 	line-height: 1rem;
 	padding: 1.33rem 0;
 	color: #404852;
+
 }
+.sub.main .sec .sec-bg{
+	width: 100vw;
+	
+	position: absolute;
+	left: 0;
+	background-size: 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+.sub.main .sec .sec-bg1{
+	height: 8.5rem;
+	top: 0;
+	left: 0;
+	background-image: url(../assets/images/sec_bg1.png);
+}
+.sub.main .sec .sec-bg2{
+	height: 8.5rem;
+	bottom: 0;
+	left: 0;
+	background-image: url(../assets/images/sec_bg2.png);
+	
+}
+.sub.main .sec .sec-bg3{
+	height: 40%;
+	bottom: 0;
+	background: linear-gradient(#e6f1ff,#fff);
+
+}
+.sub.main .sec .sec-bg4{
+	height: 100%;
+	bottom: 0;
+	background: linear-gradient(#fff,#eff2fe);
+}
+
+
 .sub.main .sec .title:before{
 	content: '';
 	display: inline-block;
@@ -770,10 +837,13 @@
 	vertical-align: top;
 }
 .sub.main .sec02 li img,.sub.main .sec02 li .text-inner{
-	width: 50%;
+	
 	display:block;
 	margin: 0 auto;
 	color: #6e7988;
+}
+.sub.main.telemedicine .sec02 .text-inner{
+	width: 50%;
 }
 .sub.main .sec02 li img{
 	margin-bottom: 0.6rem;
@@ -796,63 +866,57 @@
 .trusteeship .intro{
 	background-image: url('../assets/images/sub_intro_bg1.png');
 }
-.trusteeship .common-circle .li_01 .circle{
-	background: #ffb780;
+.trusteeship .common-circle li .circle{
+	background: #04bcd0;
 }
-.trusteeship .common-circle .li_02 .circle{
-	background: #ff9381;
-}
-.trusteeship .common-circle .li_03 .circle{
-	background: #ffaec6;
-}
-.trusteeship .common-circle .li_04 .circle{
-	background: #e8baff;
-}
+
 .sub.main.trusteeship .common-circle .text-inner{
 	width: 70%;
 }
-.trusteeship .common-rect li{
-	height: 12rem;
-	width: 8.33rem;
-	margin-right: 2.22rem;
+.trusteeship .common-rect li,.doctors .common-rect li{
+	height: 11.33rem;
+	width: 11rem;
+	margin-right: 3.5rem;
 }
-.trusteeship .common-rect li:last-child{
+.trusteeship .common-rect li:last-child,.doctors .common-rect li:last-child{
 	margin-right: 0;
 }
 .trusteeship .common-rect .down{
-	padding: 0 1.5rem;
+	padding: 0 1.8rem;
+	text-align: left;
 }
-.sub.main.trusteeship .common-rect h2{
+.sub.main.trusteeship .common-rect h2,.sub.main.doctors .common-rect h2{
 	font-size: 1.53rem;
 	text-align: left;
 	padding-left: 1.5rem;
 	margin-bottom: 1rem;
 	margin-top: 0.5rem;
 }
-.trusteeship .common-rect .li_01{
+.trusteeship .common-rect .li_01,.doctors .common-rect .li_01{
 	background-image: url(../assets/images/sub02_sec03_bg1.png);
 }
-.trusteeship .common-rect .li_02{
+.trusteeship .common-rect .li_02,.doctors .common-rect .li_02{
 	background-image: url(../assets/images/sub02_sec03_bg2.png);
 }
-.trusteeship .common-rect .li_03{
+.trusteeship .common-rect .li_03,.doctors .common-rect .li_03{
 	background-image: url(../assets/images/sub02_sec03_bg3.png);
 }
-.trusteeship .common-rect .li_04{
-	background-image: url(../assets/images/sub02_sec03_bg4.png);
-}
+
 /*教育培训开始*/
 .education .intro{
 	background-image: url('../assets/images/sub_intro_bg1.png');
 }
-.sub.main.education .common-ul li{
+.sub.main.education .common-ul li,.sub.main.alliance .common-ul li{
 	width: 11rem;
 	height: 10rem;
-	margin-right: 2.33rem;
+	margin-right: 3.5rem;
 	position: relative;
 	border: none;
 }
-.sub.main.education .common-ul h2,.sub.main.education .common-ul .text-inner p{
+.sub.main.education .common-ul li:last-child,.sub.main.alliance .common-ul li:last-child{
+	margin-right: 0;
+}
+.sub.main.education .common-ul h2,.sub.main.education .common-ul .text-inner p,.sub.main.alliance .common-ul h2,.sub.main.alliance .common-ul .text-inner p{
 	padding: 0;
 	position: absolute;
 	top: 50%;
@@ -863,45 +927,41 @@
 .sub.main.education .common-ul h2:before{
 	background-image: none;
 	margin-right: 0.5rem;
+	color: #3e7dcc;
 }
 .sub.main.education .common-ul .li_01 h2:before{
 	content: '01';
-	color: #ffb780;
 }
 .sub.main.education .common-ul .li_02 h2:before{
 	content: '02';
-	color: #ffaec6;
 }
 .sub.main.education .common-ul .li_03 h2:before{
 	content: '03';
-	color: #e8baff;
 }
-.sub.main.education .common-ul .img-inner{
+.sub.main.education .common-ul .img-inner,.sub.main.alliance .common-ul .img-inner{
 	height: 33.3%;
 	position: relative;
 	width: 100%;
 }
-.sub.main.education .common-ul .text-inner{
+.sub.main.education .common-ul .text-inner,.sub.main.alliance .common-ul .text-inner{
 	height: 66.7%;
 	position: relative;
 
 }
 
-.sub.main.education .common-ul .li_01 .text-inner{
-	background: #e5ecfe;
+.sub.main.education .common-ul li .text-inner{
+	background: #f2fbfc;
 }
-.sub.main.education .common-ul .li_02 .text-inner{
-	background: #e6f2fe;
-}
-.sub.main.education .common-ul .li_03 .text-inner{
-	background: #e4f5fd;
-}
-.sub.main.education .common-ul .text-inner p{
+
+.sub.main.education .common-ul .text-inner p,.sub.main.alliance .common-ul .text-inner p{
 	text-align: left;
 	padding: 0 1.8rem;
 	box-sizing: border-box;
 }
-.sub.main.education .common-ul .text-inner p span{
+.sub.main.alliance .common-ul .text-inner p{
+	padding: 0 0.5rem;
+}
+.sub.main.education .common-ul .text-inner p span,.sub.main.alliance .common-ul .text-inner p span{
 	display: block;
 	width: 100%;
 	margin-bottom: 0.4rem;
@@ -909,8 +969,11 @@
 .education .common-rect li,.health .common-rect li{
 	width: 11rem;
 	height: 12rem;
-	margin-right: 2.33rem;
+	margin-right: 3.5rem;
 }
+.education .common-rect li:last-child,.health .common-rect li:last-child{
+	margin-right: 0;
+	}
 .education .common-rect .li_01{
 	background-image: url('../assets/images/sub03_sec02_bg1.png');
 }
@@ -928,24 +991,31 @@
 .education .common-rect .emit-mask .down{
 	margin-top: 0.8rem;
 }
+.education .sec03 li{
+	position: relative;
+	height: 4.5rem;
+	background-repeat: no-repeat;
+	background-position: 15% bottom;
+}
+.education .sec03 .li_01{
+	background-image: url(../assets/images/sub03_sec03_bg1.png);
+}
+.education .sec03 .li_02{
+	background-image: url(../assets/images/sub03_sec03_bg2.png);
+}
+.education .sec03 .li_03{
+	background-image: url(../assets/images/sub03_sec03_bg3.png);
+}
+.education .sec03 .text-inner{
+	width: 6rem;
+	border-top: solid 1px #04bcd0;
+	border-bottom: solid 1px #04bcd0;
+	color: #333;
+	line-height: 1.5;
+	padding: 0.93rem 0;
+	position: absolute;
+	right: 2.33rem;
 
-.education .common-circle .text-inner{
-	width: 55%;
-	margin: 0 auto;
-	color: #404852;
-}
-.education .common-circle .circle p{
-	font-size: 2.33rem;
-	margin-left: -1.17rem;
-}
-.education .common-circle .li_01 .circle {
-    background: #ffb780;
-}
-.education .common-circle .li_02 .circle {
-    background: #ff9381;
-}
-.education .common-circle .li_03 .circle {
-    background: #e8baff;
 }
 /*健康管理开始*/
 
@@ -960,6 +1030,7 @@
 }
 .health .common-rect .li_03{
 	background-image: url('../assets/images/sub03_sec02_bg3.png');
+	margin-right: 0;
 }
 .health .common-rect .emit-mask .down{
 	margin-top: 0.2rem;
@@ -988,8 +1059,349 @@
 }
 .health .common-ul .img-inner{
 	height: 77.6%;
+	background-size: 60%;
 
 }
+.health .sec01 .title2{
+	text-align: center;
+	margin-bottom: 1.9rem;
+	position: relative;
+}
+.health .sec01 .title2:before,.health .sec01 .title2:after{
+	color:#778bae;
+	content: '';
+	display: inline-block;
+	width: 14.33rem;
+	height: 1.47rem;
+	border-top: solid 1px ;
+	
+	position: absolute;
+	
+	top: 50%;
+
+}
+.health .sec01 .title2:before{
+	border-left: solid 1px ;
+	left: 0;
+
+}
+.health .sec01 .title2:after{
+	border-right: solid 1px ;
+	right: 0;
+}
+.health .ul-wrap{
+	display: inline-block;
+	box-sizing: border-box;
+}
+.health .ul-wrap h3{
+	margin-bottom: 0.5rem;
+	width: 100%
+}
+.health .ul-wrap ul{
+	height: 6.67rem;
+	width: 100%;
+
+}
+.health .ul-wrap1 ul{
+	width: 14rem;
+	
+}
+.health .ul-wrap1{
+	margin-right: 3rem;
+}
+.health .ul-wrap2 ul{
+	width: 23rem;
+}
+
+.health .ul-wrap1 li{
+	line-height: 2.5;
+}
+.health .ul-wrap2 li{
+	line-height: 2;
+}
+
+/*医联体开始*/
+.alliance .sec01 .rect{
+	width: 40rem;
+	height: 14.3rem;
+	background-image: url('../assets/images/sub05_sec01_bg.png');
+	background-size: 92%;
+}
+.embrace{
+	height: 14rem;
+	position: relative;
+}
+.embrace .center-img{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.embrace .circle{
+	width: 6.2rem;
+	height: 6.2rem;
+	border-radius: 100px;
+	border: solid 3px #3e7dcc;
+	background: #f7fbff;
+	position: relative;
+	margin: 0 auto;
+}
+.embrace .circle2{
+	width: 10.6rem;
+	height: 5.3rem;
+	border-radius: 0 0 200px 200px;
+	background: #9ebee5;
+	position: relative;
+	top: -3.1rem;
+	z-index: -1;
+}
+.embrace .circle p{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #3e7dcc;
+}
+.embrace  p span{
+	display: block;
+}
+.embrace ul{
+	height: 100%;
+	position: relative;
+}
+.embrace li{
+	position: absolute;
+	padding: 12px;
+}
+.embrace li p{
+	visibility: hidden;
+}
+.embrace li:hover{
+	box-shadow: 0 0 10px #d5e2f4;
+}
+.embrace li:hover p{
+	visibility: visible;
+}
+.embrace li h3{
+	margin-bottom: 0.5rem;
+	
+}
+.embrace .pull-left h3,.embrace .pull-left p{
+	text-align: right;
+}
+.embrace .pull-right h3,.embrace .pull-right p{
+	text-align: left;
+}
+
+.embrace li h3 span{
+	border-bottom: solid 2px #3e7dcc; 
+	padding-bottom: 0.3rem;
+	display: inline-block;
+}
+.embrace li span{
+	color: #333;
+	white-space: nowrap;
+}
+.embrace .item1{
+	right: 72%;
+	top: 1.5rem;
+}
+.embrace .item2{
+	right: 68%;
+	top: 5.5rem;
+}
+.embrace .item3{
+	right: 62%;
+	top: 9.5rem;
+}
+.embrace .item4{
+	bottom: -2rem;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.embrace .item7{
+	left: 72%;
+	top: 1.5rem;
+}
+.embrace .item6{
+	left: 68%;
+	top: 5.5rem;
+}
+.embrace .item5{
+	left: 62%;
+	top: 9.5rem;
+}
+.embrace .item4 h3{
+	text-align: center;
+}
+/*医院PACS开始*/
+.hospital .sec01 .rect{
+	width: 40rem;
+	height: 14.3rem;
+	background-image: url('../assets/images/sub07_sec01_bg.png');
+	background-size: 92%;
+}
+.hospital .sub_intro_png{
+	width: 14.27rem;
+	right: 19vw;
+}
+/*区域平台开始*/
+.area .sec01 .rect{
+	width: 40rem;
+	height: 16.7rem;
+	background-image: url('../assets/images/sub06_sec01_bg.png');
+	background-size: 92%;
+}
+.area .circle{
+	background: #04bcd0;
+}
+.area .circle p{
+	font-size: 1.73rem;
+	top: 60%;
+}
+.area .common-circle .text-inner{
+	width: 54%;
+	padding: 0 23%;
+}
+.area .sec02 li{
+	height: 10rem;
+	width: 19rem;
+	margin:0 2rem 2rem 0;
+}
+.area .sec02 li:nth-child(2n){
+	margin-right: 0;
+}
+.area .sec02 .li_01 .left,.area .sec02 .li_04 .left{
+	background: #04bcd0;
+	position: relative;
+}
+.area .sec02 .li_02 .left,.area .sec02 .li_03 .left{
+	background: #3e7dcc;
+	position: relative;
+}
+.sub.main.area .sec02 li h2{
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1.17rem;
+	width: 1.2rem;
+	line-height: 1.2;
+	color: #fff;
+}
+.area .sec02 li .left{
+	width: 14%;
+}
+.sub.main.area .sec02 li .right{
+	width: 86%;
+	display: table-cell;
+	vertical-align: middle;
+	height: 10rem;
+}
+.sub.main.area .sec02 li .right p{
+	text-align: left;
+	margin: 0.5rem;
+}
+/*医生联盟开始*/
+.doctors .sub_intro_png{
+	width: 6.1rem;
+	right: 30vw;
+}
+.doctors .sec01 .rect{
+	width: 40rem;
+	height: 14.3rem;
+	background-image: url('../assets/images/sub09_sec01_bg.png');
+	background-size: 92%;
+}
+.doctors .common-rect .down{
+	text-align: left;
+	padding: 0 2.5rem;
+	line-height: 2;
+}
+.doctors .common-ul li,.group .common-ul li{
+	width: 11rem;
+	height: 10rem;
+	margin-right: 3.5rem;
+	position: relative;
+	border: none;
+}
+.doctors .common-ul li:last-child,.group .common-ul li:last-child{
+	margin-right: 0;
+}
+.sub.main.doctors .common-ul .img-inner,.sub.main.group .common-ul .img-inner{
+	height: 46.7%;
+	position: relative;
+}
+.sub.main.doctors .common-ul .text-inner,.sub.main.group .common-ul .text-inner{
+	height: 53.3%;
+	width: 100%;
+	background: #f2fbfc;
+
+}
+.sub.main.doctors .common-ul h2:before,.sub.main.group .common-ul h2:before{
+	content: '';
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	vertical-align: middle;
+	line-height: 0.87rem;
+	margin-right: 0.93rem;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.sub.main.doctors .common-ul .li_01 h2:before{
+	background-image: url(../assets/images/sub09_sec02_icon01.png);
+}
+.sub.main.doctors .common-ul .li_02 h2:before{
+	background-image: url(../assets/images/sub09_sec02_icon02.png);
+}
+.sub.main.doctors .common-ul .li_03 h2:before{
+	background-image: url(../assets/images/sub09_sec02_icon03.png);
+}
+.sub.main.doctors .common-ul h2:after,.sub.main.group .common-ul h2:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 2rem;
+	line-height: 0.87rem;
+	background-color: #04bcd0;
+	vertical-align: middle;
+	position: absolute;
+	left: 5.5rem;
+}
+.doctors .common-ul .text-inner p,.group .common-ul .text-inner p{
+	padding: 0 1.5rem;
+	box-sizing: border-box;
+}
+/*集团PACS开始*/
+.group .sub_intro_png{
+	width: 11.6rem;
+	right: 22vw;
+}
+.group .sec01 .rect{
+	width: 40rem;
+	height: 14.3rem;
+	background-image: url('../assets/images/sub08_sec01_bg.png');
+	background-size: 92%;
+}
+.sub.main.group .common-ul h2:before{
+	width: 2.5rem;
+	height: 2.5rem;
+
+}
+.sub.main.group .common-ul .li_01 h2:before{
+	background-image: url(../assets/images/sub08_sec02_icon01.png);
+}
+.sub.main.group .common-ul .li_02 h2:before{
+	background-image: url(../assets/images/sub08_sec02_icon02.png);
+}
+.sub.main.group .common-ul .li_03 h2:before{
+	background-image: url(../assets/images/sub08_sec02_icon03.png);
+}
+
 /*这部分也可以提出来公用*/
 .trusteeship .common-ul li{
 	width: 13.33rem;
@@ -1016,18 +1428,10 @@
 	vertical-align: middle;
 	margin-left: 0.53rem;
 }
-.sub.main.trusteeship .common-ul .li_01 h2:after{
-	background: #ffb780;
+.sub.main.trusteeship .common-ul li h2:after{
+	background: #3e7dcc;
 }
-.sub.main.trusteeship .common-ul .li_02 h2:after{
-	background: #ff9381;
-}
-.sub.main.trusteeship .common-ul .li_03 h2:after{
-	background: #ffaec6;
-}
-.sub.main.trusteeship .common-ul .li_04 h2:after{
-	background: #e8baff;
-}
+
 .sub.main.trusteeship .common-ul h2:before{
 	content: '';
 	display: inline-block;
@@ -1057,7 +1461,7 @@
 	height: 50%;
 	position: relative;
 }
-.trusteeship .common-ul .text-inner p,.trusteeship .common-ul .img-inner h2{
+.trusteeship .common-ul .text-inner p,.trusteeship .common-ul .img-inner h2,.doctors .common-ul .text-inner p,.doctors .common-ul .img-inner h2,.group .common-ul .text-inner p,.group .common-ul .img-inner h2{
 	width: 100%;
 	position: absolute;
 	top: 50%;
@@ -1068,15 +1472,7 @@
 	padding: 0 2rem;
 	box-sizing: border-box;
 }
-.sub.main.trusteeship .common-ul .li_01 .text-inner{
-	background:#e5ebfe;
+.sub.main.trusteeship .common-ul li .text-inner{
+	background:#f2fbfc;
 }
-.sub.main.trusteeship .common-ul .li_02 .text-inner{
-	background:#e6f2fe;
-}
-.sub.main.trusteeship .common-ul .li_03 .text-inner{
-	background:#e4f5fd;
-}
-.sub.main.trusteeship .common-ul .li_04 .text-inner{
-	background:#dff7f3;
-}
+
