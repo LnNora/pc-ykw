@@ -120,11 +120,13 @@ textarea{
 .header .menu{
 	line-height: 47px;
 	font-size: 0.6rem;
+	position: absolute;
+	right: 0;
 }
 .menu>ul{
 	display: flex;
 	display: -webkit-flex;
-	margin-left: 16rem;
+	margin-left: 13rem;
 }
 .menu li{
 	display: inline-block;
@@ -176,7 +178,7 @@ textarea{
 	white-space: nowrap;
 }
 .menu .parent>li a{
-	padding: 0px 20px;
+	padding: 0px 1.6rem;
 }
 .menu .parent li ul{
 	width: 100%;
