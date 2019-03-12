@@ -3,8 +3,24 @@
 /*整屏*/
 .section { text-align: center; font: 50px "Microsoft Yahei"; color: #000;position: relative;color: #404852;}
 .section p{color: #6e7988;}
+/*绑定菜单*/
 
+#menu { margin: 0; padding: 0; position: fixed; right: 10px; top: 55%; list-style-type: none; z-index: 70;display: flex;display: -webkit-flex; flex-direction: column;background-color: rgb(0,0,0,0.2);}
 
+#menu li {font-size: 14px;display: block;}
+
+#menu a {padding: 30px 20px;  text-decoration: none;display: block;background-repeat: no-repeat;background-position: center;background-size: 1.33rem;}
+
+#menu .active a { color: #fff; }
+
+#menu li:first-child a{background-image: url("../assets/images/first.png");}
+#menu li:nth-child(2) a{background-image: url("../assets/images/second.png");}
+#menu li:nth-child(3) a{background-image: url("../assets/images/third.png");}
+#menu li:nth-child(4) a{background-image: url("../assets/images/forth.png");}
+#menu li:first-child.active a{background-image: url("../assets/images/first_active.png");}
+#menu li:nth-child(2).active a{background-image: url("../assets/images/second_active.png");}
+#menu li:nth-child(3).active a{background-image: url("../assets/images/third_active.png");}
+#menu li:nth-child(4).active a{background-image: url("../assets/images/forth_active.png");}
 
 
 /*轮播图*/
