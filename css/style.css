@@ -1,7 +1,7 @@
 
 
 /*整屏*/
-.section { text-align: center; font: 50px "Microsoft Yahei"; color: #000;position: relative;color: #404852;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #000;position: relative;color: #404852;height: 100%!important}
 .section p{color: #6e7988;}
 /*绑定菜单*/
 
@@ -105,11 +105,14 @@
 
 
 /*第一屏*/
-.swiper-container1 {
-      width: 100vw;
-      height: 100%;
-      z-index: 0;
-    }
+
+.section1{
+	background-image: url(../assets/images/section1_bg.png);
+
+}
+.section1 p{color: #fff;}
+
+
 .section1 .footer{
 	position: fixed;
 	bottom: 0;

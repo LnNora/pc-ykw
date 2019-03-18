@@ -114,7 +114,7 @@ textarea{
 	z-index: 3;
 	/*background: rgba(255,255,255,0.9);*/
 	width: 100%;
-	background-color: #fff;
+
 
 }
 .header .menu{
@@ -145,10 +145,16 @@ textarea{
 .header a{
 	color: #000;
 }
+.section1 .header a{
+	color: #fff;
+}
 .header .logo a{
 	color:#6094d0;
 	height: 1.2rem;
 	line-height: 1.2rem
+}
+.section1 .header .logo a{
+	color: #fff;
 }
 .header .logo a img{
 	vertical-align: middle;
@@ -252,6 +258,8 @@ textarea{
 .f34{font-size: 1.13rem;}
 .f35{font-size: 1.17rem;}
 .f46{font-size: 1.53rem;}
+.f50{font-size: 1.67rem}
+.cf{color: #fff;}
 .c-active{
 	color: #6094d0;
 }
