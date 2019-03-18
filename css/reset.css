@@ -275,6 +275,18 @@ textarea{
 	background-color: #fff;
 	box-shadow: 0px 15px 10px -15px #b9babd;
 }
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.tl{
+	text-align: left;
+}
+.block{
+	display: block;
+}
 /*通用的长方形样式*/
 .common-ul li h2{
 	font-size: 0.87rem;
