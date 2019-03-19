@@ -731,25 +731,79 @@
 	background-size: 85%;
 	background-color: #fff;
 }
+.telemedicine .sec02 li{
+	height: 6rem;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.telemedicine .sec02 .li_01{
+	background-image: url(../assets/images/sub01_sec03_1.png);
+}
+.telemedicine .sec02 .li_02{
+	background-image: url(../assets/images/sub01_sec03_2.png);
+}
+.telemedicine .sec02 .li_03{
+	background-image: url(../assets/images/sub01_sec03_3.png);
+}
 .telemedicine .sec03 li{
 	width:5.5rem;
 	height:10rem;
-	margin-right:1.4rem; 
+	margin-right:1.4rem;
+	position: relative; 
 }
 .telemedicine .sec03 li:hover{
 	box-shadow: 0 0 15px #3e7dcc;
 }
 
 .telemedicine .sec03 li .img-inner{
-	height: 35%;
+	/*height: 35%;*/
+	height: 43%;
 }
 .telemedicine .sec03 li .text-inner{
-	height: 65%;
+	/*height: 65%;*/
+	height: 57%;
 	padding: 0 0.5rem;
 }
 
+
 .telemedicine .sec03 li:last-child{
 	margin-right: 0;
+}
+.telemedicine .sec03 .switch2 .line{
+	height: 2px;
+	width: 0.67rem;
+	background: #3e7dcc;
+	top: 60%;
+	z-index: 3;
+	transition: all 0.5s;
+	opacity: 1;
+}
+.telemedicine .sec03 .switch2 .text-inner{
+	padding: 3rem 0 0 0;
+	transition: all 0.5s;
+}
+.telemedicine .sec03 .switch2 p{
+	position: absolute;
+	width: 80%;
+	bottom: -50px;
+	transition: all 0.5s;
+	color: #6e7988;
+}
+.telemedicine .sec03 .switch2:hover>.img-inner{
+	height: 35%;
+}
+.telemedicine .sec03 .switch2:hover>.text-inner{
+	height: 65%;
+	padding: 1rem 0;
+}
+.telemedicine .sec03 .switch2:hover>p{
+	bottom: 1rem;
+}
+.telemedicine .sec03 .switch2:hover>.line{
+	opacity: 0;
+	top: 40%;
 }
 
 
@@ -863,7 +917,7 @@
 	
 }
 .sub.main .sec .sec-bg3{
-	height: 40%;
+	height: 60%;
 	bottom: 0;
 	background: linear-gradient(#e6f1ff,#fff);
 

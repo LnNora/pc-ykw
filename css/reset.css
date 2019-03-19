@@ -54,11 +54,23 @@ html{font-size: 30px;}
 	padding: 0;
     box-sizing: border-box;
 }
+html{
+	height: 100%;
+	width: 100%;
+}
 body{
 	margin: 0;
 	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
 }
-
+.main{
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
 
 
 h1,h2,h3,h4{
@@ -253,6 +265,7 @@ textarea{
 .f18{font-size: 0.6rem;}
 .f20{font-size: 0.67rem;}
 .f22{font-size: 0.73rem;}
+.f24{font-size: 0.8rem;}
 .f26{font-size: 0.87rem}
 .f30{font-size: 1rem;}
 .f34{font-size: 1.13rem;}
@@ -287,6 +300,24 @@ textarea{
 .block{
 	display: block;
 }
+.vcenter.hcenter{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.hcenter{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.w100{
+	width: 100%;
+}
+.br8{
+	border-radius: 8px;
+}
+
 /*通用的长方形样式*/
 .common-ul li h2{
 	font-size: 0.87rem;
@@ -387,6 +418,13 @@ textarea{
 .switch:hover  div{
 	top: -12rem;
 }
+.switch2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 2;
+}
 
 .emit-mask h2:after{
 	content: '';
@@ -468,4 +506,12 @@ li.horizontal .left,li.horizontal .right{
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
+}
+/*宽度*/
+.li-one-third{
+	width: 12.33rem;
+	margin-right: 1.505rem;
+}
+.mr0{
+	margin-right: 0;
 }
