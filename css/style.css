@@ -747,11 +747,37 @@
 .telemedicine .sec02 .li_03{
 	background-image: url(../assets/images/sub01_sec03_3.png);
 }
+
+.telemedicine .sec03{
+	overflow: hidden;
+	height: 15rem;
+	padding: 1rem 0;
+}
 .telemedicine .sec03 li{
 	width:5.5rem;
 	height:10rem;
 	margin-right:1.4rem;
 	position: relative; 
+	bottom: -400px;
+	left: -800px;
+}
+.telemedicine .sec03 .li_01{
+	transition-delay: 0.5s;
+}
+.telemedicine .sec03 .li_02{
+	transition-delay: 0.4s;
+}
+.telemedicine .sec03 .li_03{
+	transition-delay: 0.3s;
+}
+.telemedicine .sec03 .li_04{
+	transition-delay: 0.2s;
+}
+.telemedicine .sec03 .li_05{
+	transition-delay: 0.1s;
+}
+.telemedicine .sec03 .li_06{
+	transition-delay: 0s;
 }
 .telemedicine .sec03 li:hover{
 	box-shadow: 0 0 15px #3e7dcc;
@@ -885,7 +911,7 @@
 .sub.main .sec h2{
 	font-size: 1rem;
 	line-height: 1rem;
-	padding: 1.33rem 0;
+	padding: 1.8rem 0;
 	color: #404852;
 
 }
@@ -1015,8 +1041,33 @@
 .trusteeship .intro{
 	background-image: url('../assets/images/sub_intro_bg1.png');
 }
+.sub.main.trusteeship .sec02{
+	min-height: 13rem;
+	overflow: hidden;
+}
+.sub.main.trusteeship .sec02 li{
+	position: relative;
+	bottom: -400px;
+	left: -800px;
+}
+.trusteeship .sec02 .li_01{
+	transition-delay: 0.3s;
+}
+.trusteeship .sec02 .li_02{
+	transition-delay: 0.2s;
+}
+.trusteeship .sec02 .li_03{
+	transition-delay: 0.1s;
+}
+.trusteeship .sec.sec02 .li_04{
+	transition-delay: 0s;
+}
 .trusteeship .common-circle li .circle{
 	background: #04bcd0;
+}
+.trusteeship .common-circle li:hover .circle{
+	width: 51%;
+	padding: 25.5% 0;
 }
 
 .sub.main.trusteeship .common-circle .text-inner{
@@ -1041,6 +1092,10 @@
 	margin-bottom: 1rem;
 	margin-top: 0.5rem;
 }
+.trusteeship .common-rect li:hover{
+	background-image: none;
+	background-color: #dff7f3;
+}
 .trusteeship .common-rect .li_01,.doctors .common-rect .li_01{
 	background-image: url(../assets/images/sub02_sec03_bg1.png);
 }
@@ -1053,7 +1108,11 @@
 
 /*教育培训开始*/
 .education .intro{
-	background-image: url('../assets/images/sub_intro_bg1.png');
+	background-image: url('../assets/images/sub_intro_bg3.png');
+}
+.education .sec02,.education .sec03{
+	min-height: 13rem;
+	overflow: hidden;
 }
 .sub.main.education .common-ul li,.sub.main.alliance .common-ul li{
 	width: 11rem;
@@ -1076,7 +1135,12 @@
 .sub.main.education .common-ul h2:before{
 	background-image: none;
 	margin-right: 0.5rem;
-	color: #3e7dcc;
+	color: #fff;
+	background-color: #3e7dcc;
+	border-radius: 15px;
+	width: 2rem;
+	display: inline-block;
+	font-size: 0.8rem;
 }
 .sub.main.education .common-ul .li_01 h2:before{
 	content: '01';
@@ -1086,6 +1150,15 @@
 }
 .sub.main.education .common-ul .li_03 h2:before{
 	content: '03';
+}
+.sub.main.education .common-ul .li_01 .text-inner{
+	background-image: url("../assets/images/sub03_sec01_bg1.png");
+}
+.sub.main.education .common-ul .li_02 .text-inner{
+	background-image: url("../assets/images/sub03_sec01_bg2.png");
+}
+.sub.main.education .common-ul .li_03 .text-inner{
+	background-image: url("../assets/images/sub03_sec01_bg3.png");
 }
 .sub.main.education .common-ul .img-inner,.sub.main.alliance .common-ul .img-inner{
 	height: 33.3%;
@@ -1099,13 +1172,18 @@
 }
 
 .sub.main.education .common-ul li .text-inner{
-	background: #f2fbfc;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-position: 110% 140%;
 }
 
 .sub.main.education .common-ul .text-inner p,.sub.main.alliance .common-ul .text-inner p{
 	text-align: left;
 	padding: 0 1.8rem;
 	box-sizing: border-box;
+}
+.sub.main.education .common-ul .text-inner p{
+	padding: 0 0.8rem;
 }
 .sub.main.alliance .common-ul .text-inner p{
 	padding: 0 0.5rem;
@@ -1125,6 +1203,9 @@
 	}
 .education .common-rect .li_01{
 	background-image: url('../assets/images/sub03_sec02_bg1.png');
+}
+.education .common-rect li{
+	border-radius: 0;
 }
 .education .common-rect .li_02{
 	background-image: url('../assets/images/sub03_sec02_bg2.png');
@@ -1156,7 +1237,7 @@
 	background-image: url(../assets/images/sub03_sec03_bg3.png);
 }
 .education .sec03 .text-inner{
-	width: 6rem;
+	width: 7rem;
 	border-top: solid 1px #04bcd0;
 	border-bottom: solid 1px #04bcd0;
 	color: #333;
@@ -1165,6 +1246,9 @@
 	position: absolute;
 	right: 2.33rem;
 
+}
+.education .sec03 li:hover .text-inner{
+	bottom: 10px;
 }
 /*健康管理开始*/
 
@@ -1564,6 +1648,12 @@
 	position: relative;
 	border: none;
 }
+.trusteeship .common-ul li:hover{
+	width: 13.66rem;
+	height: 6.33rem;
+	margin-right: 5.67rem;
+	margin-bottom: 1.17rem;
+}
 .sub.main.trusteeship .common-ul .li_03,.sub.main.trusteeship .common-ul .li_04{
 	left: 6rem;
 }
@@ -1629,3 +1719,9 @@
 	background:#f2fbfc;
 }
 
+/*自定义动画效果*/
+.bounceInRightUp{
+	bottom: 0!important;
+	transition: all 1s;
+	left: 0!important;
+}

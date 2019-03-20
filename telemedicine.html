@@ -83,19 +83,19 @@
 				<h2 class="title">远程会诊服务医院</h2>
 				<div class="sec-bg2 sec-bg"></div>
 				<ul class="inline f0">
-					<li class="li-one-third li_01 br8" style="visibility:hidden;">
+					<li class="li-one-third li_01 br8 outShadow1" style="visibility:hidden;">
 						<div class="vcenter hcenter w100 cf">
 							<p class="f24">省市级教学医院</p>
 							<p class="f24">省市级三甲医院</p>
 						</div>
 					</li>
-					<li class="li-one-third li_02 br8">
+					<li class="li-one-third li_02 br8 outShadow2">
 						<div class="vcenter hcenter w100 cf">
 							<p class="f24">区、县级三甲医院</p>
 							<p class="f24">区、县级二甲医院</p>
 						</div>
 					</li>
-					<li class="li-one-third mr0 li_03 br8 " style="visibility:hidden;">
+					<li class="li-one-third mr0 li_03 br8 outShadow2 " style="visibility:hidden;">
 						<div class="vcenter hcenter w100 cf">
 							<p class="f24">省市级专科医院</p>
 							<p class="f24">区、县级专科医院</p>
@@ -160,24 +160,28 @@
 						</div>
 					</li>
 			</ul>
-			<!--底部-->
+			
+		</div>
+	</div>
+	<!--主要内容结束-->
+	<!--底部-->
 <div class="footer sub">
 	<p>版权所有  ©️2014-2018 ekangwang.cn  重庆途图科技有限公司    逾ICP备16005798号-2    </p>
 	<p>渝公网安备  50019002501336号   </p>
 </div>
-		</div>
-	</div>
-	<!--主要内容结束-->
 </div>
 
 <script type="text/javascript">
 	$(function(){
 		var windowH = $(window).height();
 		$(".main").scroll(function(){
-			if($(".sec02").offset().top<=windowH/2){
+			if($(".sec02").offset().top<=windowH/1.3){
 				$(".sec02 .li_01").addClass("animated bounceInLeft");
 				$(".sec02 .li_03").addClass("animated bounceInRight");
 				$(".sec02 li").css("visibility","visible");
+			}
+			if($(".sec03").offset().top<=windowH/1.3){
+				$(".sec03 li").addClass("bounceInRightUp");
 			}
 		});
 	})

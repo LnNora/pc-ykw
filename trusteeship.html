@@ -76,10 +76,10 @@
 				<h2 class="title">托管服务内容</h2>
 				<div class="sec-bg1 sec-bg"></div>
 				<ul class="common-ul f0">
-					<li class="li_01 left"><div class="img-inner"><h2 class="f26">技师推荐</h2></div><div class="text-inner"><p>为医院提供经验丰富的技师人才推荐</p></div></li>
-					<li class="li_02 left"><div class="img-inner"><h2 class="f26">技师租赁</h2></div><div class="text-inner"><p>逸康云影像合作技师团队，上岗迅速、技术能力强</p></div></li>
-					<li class="li_03 right"><div class="img-inner"><h2 class="f26">医生坐诊</h2></div><div class="text-inner"><p>提供二甲、三甲医院主任医师、副主任医师、主治医师坐诊，灵活坐诊服务</p></div></li>
-					<li class="li_04 right"><div class="img-inner"><h2 class="f26">科室托管</h2></div><div class="text-inner"><p>提供医生、技师全面负责放射科建设与运营工作</p></div></li>
+					<li class="li_01 left outShadow2 animated fadeInLeft"><div class="img-inner"><h2 class="f26">技师推荐</h2></div><div class="text-inner"><p>为医院提供经验丰富的技师人才推荐</p></div></li>
+					<li class="li_02 left outShadow2 animated fadeInLeft"><div class="img-inner"><h2 class="f26">技师租赁</h2></div><div class="text-inner"><p>逸康云影像合作技师团队，上岗迅速、技术能力强</p></div></li>
+					<li class="li_03 right outShadow2 animated fadeInRight"><div class="img-inner"><h2 class="f26">医生坐诊</h2></div><div class="text-inner"><p>提供二甲、三甲医院主任医师、副主任医师、主治医师坐诊，灵活坐诊服务</p></div></li>
+					<li class="li_04 right outShadow2 animated fadeInRight"><div class="img-inner"><h2 class="f26">科室托管</h2></div><div class="text-inner"><p>提供医生、技师全面负责放射科建设与运营工作</p></div></li>
 				</ul>
 			</div>
 
@@ -110,15 +110,15 @@
 				<h2 class="title">托管服务能力</h2>
 				<div class="sec-bg4 sec-bg"></div>
 				<ul class="inline f0 common-rect">
-					<li class="li_01">
+					<li class="li_01 op0">
 						<h2 class="f46">01</h2>
 						<div class="down f18">平台汇聚多家三甲医院影像专家，影像诊断能力强</div>
 					</li>
-					<li class="li_02">
+					<li class="li_02 op0">
 						<h2 class="f46">02</h2>
 						<div class="down f18">托管团队人才资源丰富，快速输送影像技师及医生</div>
 					</li>
-					<li class="li_03">
+					<li class="li_03 op0">
 						<h2 class="f46">03</h2>
 						<div class="down f18">托管团队科室运营经验丰富，规范影像操作流程，强化科室运营能力</div>
 					</li>
@@ -135,7 +135,19 @@
 		<!--主要内容结束-->
 
 	</div>
-	
+	<script type="text/javascript">
+	$(function(){
+		var windowH = $(window).height();
+		$(".main").scroll(function(){
+			if($(".sec02").offset().top<=windowH/1.3){
+				$(".sec02 li").addClass("bounceInRightUp");
+			}
+			if($(".sec03").offset().top<=windowH/1.3){
+				$(".sec03 li").addClass("animated bounceInUp op1");
+			}
+		});
+	})
+</script>
 	
 
 
