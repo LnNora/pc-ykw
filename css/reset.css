@@ -273,16 +273,23 @@ textarea{
 .f24{font-size: 0.8rem;}
 .f26{font-size: 0.87rem}
 .f30{font-size: 1rem;}
+.f32{font-size: 1.07rem;}
 .f34{font-size: 1.13rem;}
 .f35{font-size: 1.17rem;}
 .f46{font-size: 1.53rem;}
 .f50{font-size: 1.67rem}
 .cf{color: #fff;}
+.c0{color: #000;}
+.mr18{margin-right:0.6rem; }
+.mainColor1{color: #04bcd0;}
 .c-active{
 	color: #6094d0;
 }
 .center{
 	text-align: center;
+}
+.tleft{
+	text-align: left;
 }
 .footer.sub{
 	position: static;
@@ -305,6 +312,9 @@ textarea{
 .block{
 	display: block;
 }
+.inlneb{
+	display: inline-block;
+}
 .vcenter.hcenter{
 	position: absolute;
 	top: 50%;
@@ -315,6 +325,11 @@ textarea{
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%,0);
+}
+.vcenter{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
 }
 .w100{
 	width: 100%;
@@ -402,12 +417,17 @@ textarea{
 }
 .emit-mask{
 	color: #fff;
-	
 
-	
-	background-color: #56c8e7;
 	padding: 1.2rem 0;
-	
+}
+.health .emit-mask1{
+	background: rgba(4,188,208,0.8);
+}
+.health .emit-mask2{
+	background: rgba(62,125,204,0.8);
+}
+.health .emit-mask3{
+	background: rgba(53,111,175,0.8);
 }
 
 
@@ -437,14 +457,14 @@ textarea{
 	top: 0;
 	z-index: 2;
 }
-.switch2 h3{
+.education .switch2 h3{
 	background: rgba(0,0,0,0.6);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	padding: 0.5rem 0;
 }
-.switch2 .text-inner{
+.education .switch2 .text-inner{
 	height: 5rem;
 	position: absolute;
 	bottom: -200px;
@@ -558,4 +578,17 @@ li.horizontal .left,li.horizontal .right{
 .outShadow2:hover{
 	box-shadow: 0 0 15px #3e7dcc;
 }
+.outShadow3:hover{
+	box-shadow: 0 2px 15px #74cff3;
+}
+
+/*自定义动画效果*/
+.myBounceInUp{
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	transition: all 1s;
+	right: 0;
+}
+
 

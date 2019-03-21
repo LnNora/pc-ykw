@@ -1039,7 +1039,7 @@
     background-image: url(../assets/images/sub02_icon03.png);
 }
 .trusteeship .intro{
-	background-image: url('../assets/images/sub_intro_bg1.png');
+	background-image: url('../assets/images/sub_intro_bg2.png');
 }
 .sub.main.trusteeship .sec02{
 	min-height: 13rem;
@@ -1108,7 +1108,7 @@
 
 /*教育培训开始*/
 .education .intro{
-	background-image: url('../assets/images/sub_intro_bg3.png');
+	background-image: url('../assets/images/sub_intro_bg2.png');
 }
 .education .sec02,.education .sec03{
 	min-height: 13rem;
@@ -1253,7 +1253,7 @@
 /*健康管理开始*/
 
 .health .intro{
-	background-image: url('../assets/images/sub_intro_bg1.png');
+	background-image: url('../assets/images/sub_intro_bg4.png');
 }
 .health .common-rect .li_01{
 	background-image: url('../assets/images/sub03_sec02_bg1.png');
@@ -1351,6 +1351,10 @@
 }
 .health .ul-wrap2 li{
 	line-height: 2;
+}
+.health .sec03{
+	height: 25rem;
+	overflow: hidden;
 }
 
 /*医联体开始*/
@@ -1502,9 +1506,36 @@
 	padding: 0 23%;
 }
 .area .sec02 li{
-	height: 10rem;
-	width: 19rem;
+	height: 9.4rem;
+	width: 100%;
 	margin:0 2rem 2rem 0;
+	position: relative;
+	overflow: hidden;
+}
+.area .sec02 li img{
+	width: 9.67rem;
+	height: 9.4rem;
+}
+.area .sec02 li .text-inner{
+	width: 26rem;
+	position: absolute;
+	bottom: -10rem;
+	display: none;
+	max-height: 100%;
+	margin:0!important;
+}
+.area .sec02 li .pl{
+	left: 0;
+}
+.area .sec02 li .pr{
+	right: 0;
+}
+.area .sec02 .text-title{
+	margin-bottom: 1.4rem;
+}
+.area .sec02 .text-title div,.area .sec02  .text-title h3{
+	line-height: 2rem;
+	vertical-align: middle;
 }
 .area .sec02 li:nth-child(2n){
 	margin-right: 0;
