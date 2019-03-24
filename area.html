@@ -29,7 +29,7 @@
 
 							</ul>
 						</li>
-						<li><a href="alliance.html" class="on">云影像解决方案</a>
+						<li><a href="alliance.html" class="on">解决方案</a>
 							<ul class="child">
 								<li><a href="alliance.html">医联体</a></li>
 								<li><a href="area.html">区域平台</a></li>
@@ -38,7 +38,7 @@
 								<li><a href="doctors.html">医生联盟</a></li>
 							</ul>
 						</li>
-						
+						<li><a href="news.html">新闻中心</a></li> 
 						<li><a href="about.html" target="_self">关于我们</a></li> 
 						<li><a href="#" target="_self">登录</a></li>   
 					</ul>
@@ -177,7 +177,7 @@
 		<div class="sec sec03">
 			<h2 class="title">托管服务优势</h2>
 			<div class="sec2-bg2"></div>
-			<ul class="inline f0 common-circle">
+			<!--<ul class="inline f0 common-circle">
 				<li class="quarter li_01">
 					<div class="circle"><p>01</p></div>
 					<p class="text-inner f18">推进影像分级诊疗服务落地</p>
@@ -194,7 +194,41 @@
 					<div class="circle"><p>04</p></div>
 					<p class="text-inner f18">影像精准帮扶专家医生资源下沉基层医生技能提升</p>
 				</li>
-			</ul>
+			</ul>-->
+			<ul class="inline f0">
+					<li class="li-one-forth li_01 br8 outShadow1" style="visibility:hidden;">
+						<h3 class="f42 cf tleft">01</h3>
+						<div>01564363464</div>
+						<div class="w100 cf pl28">
+							<p class="f20 tleft mb18">推进影像分级诊疗</p>
+							<p class="f20 tleft">服务落地</p>
+						</div>
+					</li>
+					<li class="li-one-forth li_02 br8 outShadow1" style="visibility:hidden;">
+						<h3 class="f42 cf tleft">01</h3>
+						<div>01564363464</div>
+						<div class="w100 cf pl28">
+							<p class="f20 tleft mb18">推进影像分级诊疗</p>
+							<p class="f20 tleft">服务落地</p>
+						</div>
+					</li>
+					<li class="li-one-forth li_03 br8 outShadow1" style="visibility:hidden;">
+						<h3 class="f42 cf tleft">01</h3>
+						<div>01564363464</div>
+						<div class="w100 cf pl28">
+							<p class="f20 tleft mb18">推进影像分级诊疗</p>
+							<p class="f20 tleft">服务落地</p>
+						</div>
+					</li>
+					<li class="li-one-forth li_04 br8 outShadow1 mr0" style="visibility:hidden;">
+						<h3 class="f42 cf tleft">01</h3>
+						<div>01564363464</div>
+						<div class="w100 cf pl28">
+							<p class="f20 tleft mb18">推进影像分级诊疗</p>
+							<p class="f20 tleft">服务落地</p>
+						</div>
+					</li>
+				</ul>
 			<!--底部-->
 			<div class="footer sub">
 				<p>版权所有  ©️2014-2018 ekangwang.cn  重庆途图科技有限公司    逾ICP备16005798号-2    </p>
@@ -209,21 +243,17 @@
 <script type="text/javascript">
 	$(function(){
 		var windowH = $(window).height();
-		console.log(windowH/2);
 		$(".main").scroll(function(){
-			/*if($(".sec02").offset().top<=windowH/1.3){
-				$(".sec02 .li_01").addClass("animated bounceInLeft");
-				$(".sec02 .li_03").addClass("animated bounceInRight");
-				$(".sec02 li").css("visibility","visible");
-			}*/
 			$(".sec02 li img").each(function(index,element){
-	
 				if($(this).offset().top<=windowH/1.3){
 					$(this).next().addClass("animated myBounceInUp");
 					console.log($(this).offset().top);
 				}
-				
 			})
+			if($(".sec03").offset().top<=windowH/1.3){
+				$(".sec03 li").addClass("mybounceInUp2");
+				$(".sec03 li").css("visibility","visible");
+			}
 		});
 	})
 </script>

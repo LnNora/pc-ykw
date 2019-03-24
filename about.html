@@ -1,26 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>关于我们</title>
-	<link rel="stylesheet" href="css/animate.min.css">
-	<style type="text/css">
-		.test{
-			width: 80%;
-			margin: 0 auto;
-			text-align: center;
-		}
-		.test .li2{
-			animation-duration:1.5s;
-			animation-delay: 0.5s;
-		}
-	</style>
-</head>
-<body>
-	<div class="test">
-		<div class="animated bounceInLeft li1">啦啦啦啦</div>
-		<div class="animated bounceInRight li2">啦啦啦啦</div>
-	</div>
-	
-</body>
-</html>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+		<title>关于我们</title>
+		<link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-1.8.3.min.js"></script>
+
+	</head>
+	<body>
+		<!--header开始-->
+		<header class="header fixed">
+			<div class="wrap cf">
+				<div class="logo"><a href="javascript:void(0);" title=""><img src="assets/images/logo.png" onerror="lods(this)" /><span>逸康医学云影像</span></a></div> 
+				<nav class="menu">
+					<ul class="parent">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="telemedicine.html">产品服务</a>
+							<ul class="child">
+								<li><a href="telemedicine.html">远程会诊</a></li>
+								<li><a href="trusteeship.html">托管服务</a></li>
+								<li><a href="education.html">教育培训</a></li>
+								<li><a href="health.html">健康管理</a></li>
+
+							</ul>
+						</li>
+						<li><a href="alliance.html" >解决方案</a>
+							<ul class="child">
+								<li><a href="alliance.html">医联体</a></li>
+								<li><a href="area.html">区域平台</a></li>
+								<li><a href="hospital.html">全院PACS</a></li>
+								<li><a href="group.html">集团PACS</a></li>
+								<li><a href="doctors.html">医生联盟</a></li>
+							</ul>
+						</li>
+						<li><a href="news.html">新闻中心</a></li> 
+						<li><a href="about.html" class="on">关于我们</a></li> 
+						<li><a href="#" target="_self">登录</a></li>   
+					</ul>
+				</nav>
+
+
+			</div>
+			<!--移动端菜单-->
+			<div class="mobile-menu"><span class="strip">menu</span></div>
+		</header>
+		<!--header结束-->
+		<div class="sub main about">
+
+			<!--主要内容开始-->
+			<div class="content below-header">
+				<div class="sec sec01">
+					<h2 class="title">逸康云影像介绍</h2>
+					<div class="article">
+						<h3 class="f20 mb30">重庆途图科技有限公司</h3>
+						<p class="f16 mb70">
+							<span class="block">重庆途图科技公司成立于2014年9月，注册资金500万元，是集研发、集成、生产、运营于一体的创新型互联网运营公司。</span>
+							<span class="block">技术保障完备、支撑协作到位、服务经验丰富；获得重庆市科委、重庆市卫计委联合颁发的"健康管理模式创新与应用示范专项”应用示范单位；自主研发的“逸康云影像</span>
+							<span class="block">运营服务平台”“逸康健康管理运营服务平台”已获得计算机软件著作权，并通过信息系统安全保护三级认证。</span>
+						</p>
+						<div>
+							<img src="assets/images/about_sec01_img.png" style="float: right;">
+							<p class="f16 mb18">逸康云影像是由重庆途图科技有限公司打造的基于医学影像的创新性一站式影像服务平台。</p>
+							<p class="f16 mb18">自2017年11月进入市场以来，发展迅速，接入包含省市级三甲医院、三甲医
+								院、二甲医院、专科医院等为基层医疗机构及患者提供影像服务，受到各级
+							医疗机构的广泛好评。</p>
+							<p class="f16 mb18">云影像平台90%以上的远程影像1小时内完成阅片报告，让基层医疗机构感
+								受到了互联网+医疗带来的优势，有效节约诊疗成本，提升优质资源共享的
+							使用效率。</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="sec sec02">
+					<h2 class="title">联系我们</h2>
+					<div class="sec-bg5 sec-bg"></div>
+					<ul>
+						<li class="inlineb">
+							<div>
+							<img src="assets/images/contact_icon1.png">
+							<p class="f18">联系电话</p>
+							<p class="f16">023-923747234</p>
+							<p class="f16">13477283722</p>
+						</div>
+						</li>
+						<li class="inlineb">
+							<div>
+							<img src="assets/images/contact_icon2.png">
+							<p class="f18">电子邮箱</p>
+							<p class="f16">19289132473274</p>
+							<p class="f16">@qq.com</p>
+						</div>
+						</li>
+						<li class="inlineb">
+							<div>
+							<img src="assets/images/contact_icon3.png">
+							<p class="f18">微信</p>
+							<p class="f16 op0">wx</p>
+							<p class="f16">923747234</p>
+						</div>
+
+						</li>
+						<li class="inlineb">
+							<div>
+							<img src="assets/images/contact_icon4.png">
+							<p class="f18">公司地址</p>
+							<p class="f16">重庆渝北区光电园</p>
+							<p class="f16">麒麟座C座7楼</p>
+						</div>
+
+						</li>
+						<li class="inlineb">
+							<div>
+							<div class="inlineb qrcode">
+								<img src="assets/images/qrcode.png">
+								<p class="f18">微信公众号</p>
+							</div>
+							<div class="inlineb qrcode">
+								<img src="assets/images/qrcode.png">
+								<p class="f18">Demo演示</p>
+							</div>
+						</div>
+						</li>
+					</ul>
+					<!--底部-->
+				<div class="footer sub">
+					<p>版权所有  ©️2014-2018 ekangwang.cn  重庆途图科技有限公司    逾ICP备16005798号-2    </p>
+					<p>渝公网安备  50019002501336号   </p>
+				</div>
+				</div>
+
+				
+			</div>
+			<!--主要内容结束-->
+		</div>
+
+
+
+	</body>
+	</html>

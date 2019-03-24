@@ -29,7 +29,7 @@
 
 							</ul>
 						</li>
-						<li><a href="alliance.html" class="on">云影像解决方案</a>
+						<li><a href="alliance.html" class="on">解决方案</a>
 							<ul class="child">
 								<li><a href="alliance.html">医联体</a></li>
 								<li><a href="area.html">区域平台</a></li>
@@ -38,7 +38,7 @@
 								<li><a href="doctors.html">医生联盟</a></li>
 							</ul>
 						</li>
-						
+						<li><a href="news.html">新闻中心</a></li> 
 						<li><a href="about.html" target="_self">关于我们</a></li> 
 <li><a href="#" target="_self">登录</a></li>   
 					</ul>
@@ -100,37 +100,64 @@
 						<h2 class="title">医联体解决方案优势</h2>
 						<div class="embrace">
 							<div class="center-img">
-								<div class="circle f30"><p><span>医联体</span><span>解决方案</span><span>优势</span></p></div>
-								<div class="circle2"></div>
+								<div class="circleChart" id="1" data-value="77">
+								</div>
+								<div class="circle f30 hcenter"><!--<p><span>医联体</span><span>解决方案</span><span>优势</span></p>-->
+								
+								</div>
+								
+								
 							</div>
 							<ul>
-								<li class="item1 pull-left">
-									<h3 class="f22"><span>01 水平提升</span></h3>
+								<li class="item1 pull-left ">
+									<div class="text-inner inlineb">
+									<h3 class="f22"><span>水平提升</span></h3>
 									<p class="f16"><span>提升医联体基层医疗机构</span><span>诊疗能力，影像水平同质化</span></p>
+								</div>
+								<img src="assets/images/sub08_sec02_icon01.png">
 								</li>
 								<li class="item2 pull-left">
-									<h3 class="f22"><span>02 节约成本</span></h3>
+									<div class="text-inner inlineb">
+									<h3 class="f22"><span>节约成本</span></h3>
 									<p class="f16"><span>解决基层医疗机构影像医生</span><span>缺乏问题降低影像建设成本</span></p>
+								</div>
+								<img src="assets/images/sub08_sec02_icon01.png">
 								</li>
 								<li class="item3 pull-left">
-									<h3 class="f22"><span>03 品牌塑造</span></h3>
+									<div class="text-inner inlineb">
+									<h3 class="f22"><span>品牌塑造</span></h3>
 									<p class="f16"><span>区域内影像数据统一管理</span><span>实现影像数据共享、联动</span></p>
+								</div>
+									<img src="assets/images/sub08_sec02_icon01.png">
 								</li>
 								<li class="item4">
-									<h3 class="f22"><span>04 数据联动</span></h3>
+									<div class="text-inner">
 									<p class="f16"><span>提升医联体基层医疗机构</span><span>诊疗能力，影像水平同质化</span></p>
+									<h3 class="f22"><span>数据联动</span></h3>
+								</div>
+								<img src="assets/images/sub08_sec02_icon01.png">
+									
 								</li>
 								<li class="item5 pull-right">
-									<h3 class="f22"><span>05 增加收益</span></h3>
+									<img src="assets/images/sub08_sec02_icon01.png">
+									<div class="text-inner inlineb">
+									<h3 class="f22"><span>增加收益</span></h3>
 									<p class="f16"><span>增加基层医疗机构业务收入</span><span>推动医生多点执业，增加阳光收入</span></p>
+								</div>
 								</li>
 								<li class="item6 pull-right">
-									<h3 class="f22"><span>06 水平提升</span></h3>
+									<img src="assets/images/sub08_sec02_icon01.png">
+									<div class="text-inner inlineb">
+									<h3 class="f22"><span>水平提升</span></h3>
 									<p class="f16"><span>互联网+医学影像，</span><span>随时随地阅片提升效率</span></p>
+								</div>
 								</li>
 								<li class="item7 pull-right">
-									<h3 class="f22"><span>07 资源分配</span></h3>
+									<img src="assets/images/sub08_sec02_icon01.png">
+									<div class="text-inner inlineb">
+									<h3 class="f22"><span>资源分配</span></h3>
 									<p class="f16"><span>有利于中心医院影像专家资源下沉，</span><span>提升医疗资源利用率</span></p>
+								</div>
 								</li>
 							</ul>
 						</div>
@@ -139,14 +166,42 @@
 
 				</div>
 				<!--主要内容结束-->
-			</div>
-			<!--底部-->
+				<!--底部-->
 			<div class="footer sub">
 				<p>版权所有  ©️2014-2018 ekangwang.cn  重庆途图科技有限公司    逾ICP备16005798号-2    </p>
 				<p>渝公网安备  50019002501336号   </p>
 			</div>
-
+			</div>
 			
+			<script src="js/circleChart.min.js"></script>
+			<script type="text/javascript">
+	$(function(){
+		var windowH = $(window).height();
+		var circleS = $(".circleChart").width();
+		$(".main").scroll(function(){
+			
+			if($(".sec03").offset().top<=windowH/1.3){
+				$(".sec03 .pull-left").addClass("animated fadeInLeft");
+				$(".sec03 .pull-right").addClass("animated fadeInRight");
+				$(".sec03 .item4").addClass("animated fadeInDown");
+				//$(".sec03 li").css("visibility","visible");
+			}
+			$(".circleChart#1").circleChart({
+
+					startAngle: 100,
+					speed: 4500,
+					animation: "easeInOutCubic",
+					background:  false,
+					color: "#8cb1e1",
+					size:circleS,
+					widthRatio: 0.02,
+					counterclockwise: false,
+					value: 60
+	});
+
+		});
+	})
+</script>
 
 		</body>
 		</html>

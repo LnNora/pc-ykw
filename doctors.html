@@ -29,7 +29,7 @@
 
 							</ul>
 						</li>
-						<li><a href="alliance.html" class="on">云影像解决方案</a>
+						<li><a href="alliance.html" class="on">解决方案</a>
 							<ul class="child">
 								<li><a href="alliance.html">医联体</a></li>
 								<li><a href="area.html">区域平台</a></li>
@@ -38,7 +38,7 @@
 								<li><a href="doctors.html">医生联盟</a></li>
 							</ul>
 						</li>
-						
+						<li><a href="news.html">新闻中心</a></li> 
 						<li><a href="about.html" target="_self">关于我们</a></li> 
 <li><a href="#" target="_self">登录</a></li>   
 					</ul>
@@ -83,7 +83,7 @@
 					<h2 class="title">应用场景</h2>
 					<div class="sec2-bg1 sec2-bg-left"></div>
 						<div class="sec2-bg1 sec2-bg-right"></div>
-					<div class="rect"></div>
+					<div class="rect animated bounceInUp"></div>
 				</div>
 
 				<div class="sec sec02">
@@ -91,25 +91,29 @@
 				<div class="sec2-bg1 sec2-bg-left"></div>
 						<div class="sec2-bg1 sec2-bg-right"></div>
 				<ul class="common-ul f0">
-					<li class="li_01 left"><div class="img-inner"><h2 class="f26">专家团队</h2></div><div class="text-inner"><p>专科医师联盟汇集多家三甲医院放射科专家医师，具有丰富的临床诊断经验，提升影像诊断能力</p></div></li>
+					<!--<li class="li_01 left"><div class="img-inner"><h2 class="f26">专家团队</h2></div><div class="text-inner"><p>专科医师联盟汇集多家三甲医院放射科专家医师，具有丰富的临床诊断经验，提升影像诊断能力</p></div></li>
 					<li class="li_02 left"><div class="img-inner"><h2 class="f26">业务管理</h2></div><div class="text-inner"><p>业务协作，帮助和提升基层医疗机构对放射科的管理工作</p></div></li>
-					<li class="li_03 right"><div class="img-inner"><h2 class="f26">赋能医生</h2></div><div class="text-inner"><p>平台提供远程诊断工作，有效利用专家医生碎片化时间，赋能医生</p></div></li>
+					<li class="li_03 right"><div class="img-inner"><h2 class="f26">赋能医生</h2></div><div class="text-inner"><p>平台提供远程诊断工作，有效利用专家医生碎片化时间，赋能医生</p></div></li>-->
+					<li class="li_01 left outShadow4"><div class="img-inner hcenter"></div><div class="text-inner"><div><h3 class="f26 c0">专家团队</h3><p class="c0">专科医师联盟汇集多家三甲医院放射科专家医师，具有丰富的临床诊断经验，提升影像诊断能力</p></div></div></li>
+					<li class="li_02 left outShadow4"><div class="img-inner hcenter"></div><div class="text-inner"><div><h3 class="f26 c0">专家团队</h3><p class="c0">专科医师联盟汇集多家三甲医院放射科专家医师，具有丰富的临床诊断经验，提升影像诊断能力</p></div></div></li>
+					<li class="li_03 left outShadow4"><div class="img-inner hcenter"></div><div class="text-inner"><div><h3 class="f26 c0">专家团队</h3><p class="c0">专科医师联盟汇集多家三甲医院放射科专家医师，具有丰富的临床诊断经验，提升影像诊断能力</p></div></div></li>
+
 				</ul>
 			</div>
 
 				<div class="sec sec03">
-					<h2 class="title">托管服务能力</h2>
+					<h2 class="title">区域平台优势</h2>
 					<div class="sec2-bg2"></div>
 					<ul class="inline f0 common-rect">
-						<li class="li_01">
+						<li class="li_01 op0">
 							<h2 class="f46">01</h2>
 							<div class="down f18">影像专家资源丰富阅片时效有保障灵活的费用标准</div>
 						</li>
-						<li class="li_02">
+						<li class="li_02 op0">
 							<h2 class="f46">02</h2>
 							<div class="down f18">托可灵活选择影像科专家医生阅片</div>
 						</li>
-						<li class="li_03">
+						<li class="li_03 op0">
 							<h2 class="f46">03</h2>
 							<div class="down f18">推动医生多点执业增加医生阳光收入</div>
 						</li>
@@ -125,7 +129,20 @@
 			</div>
 			<!--主要内容结束-->
 		</div>
-		
+		<script type="text/javascript">
+	$(function(){
+		var windowH = $(window).height();
+		$(".main").scroll(function(){
+			if($(".sec02").offset().top<=windowH/1.3){
+				$(".sec02 .li_01").addClass("animated bounceInLeft");
+				$(".sec02 .li_03").addClass("animated bounceInRight");
+			}
+			if($(".sec03").offset().top<=windowH/1.3){
+				$(".sec03 li").addClass("animated bounceInUp op1");
+			}
+		});
+	})
+</script>
 
 		
 

@@ -201,7 +201,10 @@ textarea{
 	white-space: nowrap;
 }
 .menu .parent>li a{
-	padding: 0px 1.6rem;
+	padding: 0px 1.1rem;
+}
+.menu .parent>li:last-child{
+	margin-left: 3rem;
 }
 .menu .parent li ul{
 	width: 100%;
@@ -272,16 +275,27 @@ textarea{
 .f22{font-size: 0.73rem;}
 .f24{font-size: 0.8rem;}
 .f26{font-size: 0.87rem}
+.f28{font-size: 0.93rem;}
 .f30{font-size: 1rem;}
 .f32{font-size: 1.07rem;}
 .f34{font-size: 1.13rem;}
 .f35{font-size: 1.17rem;}
+.f42{font-size: 1.4rem;}
 .f46{font-size: 1.53rem;}
 .f50{font-size: 1.67rem}
 .cf{color: #fff;}
 .c0{color: #000;}
+.mr16{margin-right:0.53rem; }
 .mr18{margin-right:0.6rem; }
+.mb15{margin-bottom: 0.5rem;}
+.mb18{margin-bottom:0.6rem; }
+.mb18{margin-bottom:0.6rem; }
+.mb20{margin-bottom:0.67rem; }
+.mb30{margin-bottom: 1rem;}
+.mb70{margin-bottom: 2.33rem;}
+.pl28{padding-left:0.93rem; }
 .mainColor1{color: #04bcd0;}
+.cweaken{color: #666}
 .c-active{
 	color: #6094d0;
 }
@@ -309,10 +323,13 @@ textarea{
 .tl{
 	text-align: left;
 }
+.tr{
+	text-align: right;
+}
 .block{
 	display: block;
 }
-.inlneb{
+.inlineb{
 	display: inline-block;
 }
 .vcenter.hcenter{
@@ -567,6 +584,10 @@ li.horizontal .left,li.horizontal .right{
 	width: 12.33rem;
 	margin-right: 1.505rem;
 }
+.li-one-forth{
+	width: 9rem;
+	margin-right: 1.33rem;
+}
 .mr0{
 	margin-right: 0;
 }
@@ -581,6 +602,9 @@ li.horizontal .left,li.horizontal .right{
 .outShadow3:hover{
 	box-shadow: 0 2px 15px #74cff3;
 }
+.outShadow4:hover{
+	box-shadow:0 0 20px #ddf9fc;
+}
 
 /*自定义动画效果*/
 .myBounceInUp{
@@ -590,5 +614,11 @@ li.horizontal .left,li.horizontal .right{
 	transition: all 1s;
 	right: 0;
 }
+.mybounceInUp2{
+	bottom: 0!important;
+	transition: all 1s;
+
+}
+
 
 
